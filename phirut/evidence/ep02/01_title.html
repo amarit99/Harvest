@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  body { background: #07070a; position: relative; }
+  .beam { position: absolute; inset: 0; background: radial-gradient(circle 380px at 50% 40%, rgba(255,214,150,.26), rgba(255,190,110,.08) 55%, transparent 72%), linear-gradient(180deg, #111018 0%, #07070a 100%); }
+  /* บันไดหนีไฟมองจากบน */
+  .stairs { position: absolute; left: 50%; top: 40%; width: 640px; height: 640px; transform: translate(-50%,-50%); opacity: .5; }
+  .title { position: absolute; left: 0; right: 0; top: 590px; text-align: center; font-family: 'Kanit'; font-weight: 900; font-size: 300px; line-height: 1; color: #f1e6cf; letter-spacing: 6px; text-shadow: 0 10px 40px rgba(0,0,0,.9); }
+  .title span { color: var(--red); }
+  .sub { position: absolute; left: 0; right: 0; top: 960px; text-align: center; font-family: 'Kanit'; font-weight: 500; font-size: 56px; color: #e8dcc3; letter-spacing: 3px; }
+  .sub small { display: block; font-size: 34px; color: var(--red); letter-spacing: 10px; margin-bottom: 10px; font-weight: 700; }
+  .line { position: absolute; left: 50%; top: 1150px; transform: translateX(-50%); width: 860px; text-align: center; font-family: 'Sarabun'; font-weight: 300; font-size: 44px; line-height: 1.6; color: #cfc4ae; }
+  .line b { font-weight: 600; color: #fff; }
+</style></head>
+<body class="grain">
+  <div class="beam"></div>
+  <svg class="stairs" viewBox="-320 -320 640 640" fill="none" stroke="#e8dcc3" stroke-width="3">
+    <rect x="-300" y="-300" width="600" height="600"/><rect x="-240" y="-240" width="480" height="480"/><rect x="-180" y="-180" width="360" height="360"/><rect x="-120" y="-120" width="240" height="240"/><rect x="-60" y="-60" width="120" height="120"/>
+    <path d="M-300 -300 L-60 -60 M300 -300 L60 -60 M300 300 L60 60 M-300 300 L-60 60"/>
+  </svg>
+  <div class="title">พิรุ<span>ธ</span></div>
+  <div class="sub"><small>คดีที่ ๒</small>ใครผลักผมตกบันได</div>
+  <div class="line">“ผมจำคืนนั้นไม่ได้เลย<br><b>…แต่กระดาษจำได้ทุกอย่าง</b>”</div>
+</body></html>

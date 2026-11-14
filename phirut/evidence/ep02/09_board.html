@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  body { position: relative; background:
+      radial-gradient(ellipse 75% 55% at 50% 45%, rgba(255,215,150,.28), transparent 75%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .33  0 0 0 0 .16  0 0 0 .9 0'/></filter><rect width='100%' height='100%' fill='%23855a33'/><rect width='100%' height='100%' filter='url(%23c)'/></svg>"); }
+  .line { position: absolute; left: 190px; top: 260px; bottom: 300px; width: 8px; background: #d1141b; box-shadow: 0 4px 8px rgba(0,0,0,.4); }
+  .ev { position: absolute; left: 140px; display: flex; align-items: center; gap: 30px; }
+  .ev .dot { width: 108px; height: 108px; flex: none; border-radius: 50%; background: #f8f3e3; border: 6px solid #d1141b; display: grid; place-items: center; font-family: 'Kanit'; font-weight: 700; font-size: 30px; box-shadow: 0 8px 16px rgba(0,0,0,.45); z-index: 2; }
+  .ev .card { background: #fbf7ea; padding: 14px 24px; font-size: 32px; line-height: 1.35; box-shadow: 0 10px 22px rgba(0,0,0,.45); width: 700px; }
+  .ev .card small { display: block; font-size: 24px; color: #666; }
+  .ev.hot .dot { background: #d1141b; color: #fff; }
+  .ev.hot .card { background: #fff27a; font-family: 'Sriracha'; }
+  .q { position: absolute; left: 70px; right: 70px; bottom: 400px; text-align: center; font-family: 'Sriracha'; font-size: 50px; color: #fff; background: rgba(15,10,8,.85); padding: 20px; border-radius: 12px; transform: rotate(-1deg); }
+  .q b { color: #ff5156; font-weight: 400; }
+</style></head>
+<body class="grain">
+  <div class="tag"><b>บอร์ดคดี</b> คืนวันที่ 6 มิ.ย.</div>
+  <div class="line"></div>
+  <div class="ev" style="top:250px"><div class="dot">21:02</div><div class="card">ข้อความล่อ “มาชั้น 4 คนเดียว”<small>เบอร์ไม่รู้จัก</small></div></div>
+  <div class="ev" style="top:400px"><div class="dot">21:12</div><div class="card">V-07 (ธนากรวัสดุ) ขึ้นชั้น 4<small>ไปรอก่อน</small></div></div>
+  <div class="ev" style="top:550px"><div class="dot">21:22</div><div class="card">ผม (V-08) ขึ้นชั้น 4</div></div>
+  <div class="ev" style="top:700px"><div class="dot">21:30</div><div class="card">รปภ. ไปกินข้าวหน้าตึก<small>ไม่มีใครเห็นอะไรเลย</small></div></div>
+  <div class="ev hot" style="top:850px"><div class="dot">21:40</div><div class="card">ผมถูกผลักจากข้างหลัง ✋✋</div></div>
+  <div class="ev hot" style="top:1000px"><div class="dot">21:44</div><div class="card">V-07 หนีออกประตูฉุกเฉิน B2</div></div>
+  <div class="ev" style="top:1150px"><div class="dot">22:05</div><div class="card">รปภ. “เพิ่งเจอ” ผม<small>แต่ให้การว่า “เห็นกับตา”</small></div></div>
+  <div class="q">ไม่ใช่อุบัติเหตุ… <b>มันคือการนัดมาฆ่า</b></div>
+</body></html>

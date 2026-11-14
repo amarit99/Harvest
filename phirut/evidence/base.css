@@ -87,3 +87,15 @@ body.desk {
   background: var(--red); color: #fff; font-weight: 700;
   padding: 6px 18px; border-radius: 6px; font-size: 32px;
 }
+
+/* ---- เครื่องหมายเฉลย (ใช้กับ marks.js) ---- */
+svg.marks { position: absolute; inset: 0; z-index: 60; pointer-events: none; }
+svg.marks * { fill: none; stroke: #ff2a2f; stroke-width: 7; stroke-linecap: round; }
+.rnote {
+  position: absolute; z-index: 61;
+  font-family: 'Sriracha', cursive; font-size: 32px; line-height: 1.3; color: #fff;
+  background: rgba(170,18,24,.94); padding: 10px 20px; border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.5);
+}
+.rnote i { font-style: normal; display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #fff; color: #b01219; font-family: 'Kanit'; font-weight: 700; font-size: 28px; margin-right: 10px; vertical-align: 2px; }
+body.reveal .tag b { background: #ff2a2f; }

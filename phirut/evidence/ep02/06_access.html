@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  .paper { left: 90px; top: 300px; width: 900px; height: 1260px; padding: 50px 46px; transform: rotate(-1.4deg); background: #fbfaf5; font-family: 'Liberation Mono', monospace; font-size: 23px; line-height: 1.55; color: #222; }
+  .paper::after { content: ""; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: repeating-linear-gradient(180deg, transparent 0 70px, rgba(120,170,140,.12) 70px 140px); pointer-events: none; }
+  h1 { margin: 0; font-family: 'Kanit'; font-size: 32px; font-weight: 700; }
+  .sub { font-family: 'Sarabun'; font-size: 22px; color: #555; margin-bottom: 18px; }
+  table { width: 100%; border-collapse: collapse; font-size: 25px; }
+  th { text-align: left; border-bottom: 2px dashed #555; padding: 6px 4px; font-family: 'Sarabun'; font-weight: 700; }
+  td { padding: 18px 4px; border-bottom: 1px dashed #bbb; vertical-align: top; font-family: 'Liberation Mono', 'Sarabun', monospace; }
+  td.th { font-family: 'Sarabun'; font-size: 26px; }
+  .alarm { color: #b3141b; font-weight: 700; }
+  .ft { position: absolute; left: 46px; right: 46px; bottom: 36px; font-size: 18px; color: #888; }
+</style></head>
+<body class="desk grain">
+  <div class="tag"><b>หลักฐาน ๕</b> ประวัติบัตรผ่านเข้าออก</div>
+  <div class="paper">
+    <h1>ACCESS LOG · รุ่งเรืองพลาซ่า</h1>
+    <div class="sub">ช่วงเวลา 06/06/2569 20:00 – 23:59 · บัตรแขก (V-xx) เท่านั้น</div>
+    <table>
+      <tr><th style="width:150px">เวลา</th><th style="width:100px">บัตร</th><th>จุด</th><th style="width:110px">ทิศ</th></tr>
+      <tr><td>21:11:52</td><td>V-07</td><td class="th">ประตูหลัก ชั้น G<br><small>แขก · ธนากรวัสดุ</small></td><td class="th">เข้า</td></tr>
+      <tr><td>21:12:40</td><td>V-07</td><td class="th">ลิฟต์ → ชั้น 4</td><td class="th">ขึ้น</td></tr>
+      <tr><td>21:21:05</td><td>V-08</td><td class="th">ประตูหลัก ชั้น G<br><small>แขก · บุคคลทั่วไป</small></td><td class="th">เข้า</td></tr>
+      <tr><td>21:22:18</td><td>V-08</td><td class="th">ลิฟต์ → ชั้น 4</td><td class="th">ขึ้น</td></tr>
+      <tr><td>21:38:09</td><td>V-08</td><td class="th">ประตูบันไดหนีไฟ ชั้น 4</td><td class="th">ออก</td></tr>
+      <tr><td>21:44:31</td><td>V-07</td><td class="th">ประตูหนีไฟ ชั้น B2 (ลานจอดรถ)<br><span class="alarm">⚠ ALARM: เปิดประตูฉุกเฉิน</span></td><td class="th">ออก</td></tr>
+      <tr><td>22:47:15</td><td>—</td><td class="th">ประตูหลัก ชั้น G (เจ้าหน้าที่กู้ภัย)</td><td class="th">ออก</td></tr>
+    </table>
+    <div class="ft">พิมพ์จากระบบรักษาความปลอดภัย · หน้า 1/1</div>
+
+    <svg class="marks" viewBox="0 0 900 1260">
+      <ellipse data-s="4" cx="450" cy="268" rx="440" ry="52"/>
+      <ellipse data-s="4" cx="450" cy="362" rx="440" ry="36"/>
+      <ellipse data-s="5" cx="450" cy="738" rx="440" ry="62"/>
+    </svg>
+    <div data-s="4" class="rnote" style="right:10px; top:150px; transform:rotate(2deg)"><i>4</i>ธนากรวัสดุ ขึ้นชั้น 4 ก่อนผม 10 นาที</div>
+    <div data-s="5" class="rnote" style="left:40px; top:900px; transform:rotate(-1.5deg)"><i>5</i>หนีออกประตูฉุกเฉิน<br>4 นาทีหลังผมตก</div>
+  </div>
+  <script src="../marks.js"></script>
+</body></html>
