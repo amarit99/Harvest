@@ -21,16 +21,21 @@
   <div class="cover"></div>
   <div class="tag"><b>เฉลย</b> พิรุธในใบสำคัญจ่าย</div>
   <svg class="marks" viewBox="0 0 1080 1920" fill="none" stroke="#ff2a2f" stroke-width="7" stroke-linecap="round">
-    <ellipse cx="860" cy="816" rx="140" ry="44" transform="rotate(-3 860 816)"/>
-    <ellipse cx="860" cy="1028" rx="140" ry="44" transform="rotate(2 860 1028)"/>
-    <ellipse cx="500" cy="1106" rx="150" ry="40" transform="rotate(-2 500 1106)"/>
-    <ellipse cx="225" cy="1536" rx="120" ry="34"/>
-    <ellipse cx="585" cy="1541" rx="120" ry="34"/>
-    <path d="M630 1110 Q 700 1080 720 1050"/>
+    <ellipse data-s="1" cx="860" cy="816" rx="140" ry="44" transform="rotate(-3 860 816)"/>
+    <ellipse data-s="3" cx="860" cy="1028" rx="140" ry="44" transform="rotate(2 860 1028)"/>
+    <ellipse data-s="2" cx="500" cy="1106" rx="150" ry="40" transform="rotate(-2 500 1106)"/>
+    <ellipse data-s="4" cx="225" cy="1536" rx="120" ry="34"/>
+    <ellipse data-s="5" cx="585" cy="1541" rx="120" ry="34"/>
+    <path data-s="2" d="M630 1110 Q 700 1080 720 1050"/>
   </svg>
-  <div class="note" style="left:470px; top:690px; transform:rotate(-2deg)"><i>1</i>ตัวเลข = 2 ล้าน</div>
-  <div class="note" style="left:90px; top:1170px; transform:rotate(1deg)"><i>2</i>แต่ตัวหนังสือ = “สองแสน”!</div>
-  <div class="note" style="left:470px; top:1240px; transform:rotate(-1deg); font-size:30px"><i>3</i>ฟอนต์ตัวเลขไม่เหมือน<br>ทั้งเอกสาร → ถูกแก้ทีหลัง</div>
-  <div class="note" style="left:60px; top:1610px; transform:rotate(-1.5deg); font-size:30px"><i>4</i>v3.2 = พิมพ์หลัง 2 พ.ค.<br>ผมถูกตัดสิทธิ์ตั้งแต่ 28 เม.ย.</div>
-  <div class="note" style="left:600px; top:1610px; transform:rotate(1.5deg); font-size:30px"><i>5</i>USR-0117<br>= วิโรจน์</div>
+  <div data-s="1" class="note" style="left:470px; top:690px; transform:rotate(-2deg)"><i>1</i>ตัวเลข = 2 ล้าน</div>
+  <div data-s="2" class="note" style="left:90px; top:1170px; transform:rotate(1deg)"><i>2</i>แต่ตัวหนังสือ = “สองแสน”!</div>
+  <div data-s="3" class="note" style="left:470px; top:1240px; transform:rotate(-1deg); font-size:30px"><i>3</i>ฟอนต์ตัวเลขไม่เหมือน<br>ทั้งเอกสาร → ถูกแก้ทีหลัง</div>
+  <div data-s="4" class="note" style="left:60px; top:1580px; transform:rotate(-1.5deg); font-size:30px"><i>4</i>v3.2 = พิมพ์หลัง 2 พ.ค.<br>ผมถูกตัดสิทธิ์ตั้งแต่ 28 เม.ย.</div>
+  <div data-s="5" class="note" style="left:600px; top:1580px; transform:rotate(1.5deg); font-size:30px"><i>5</i>USR-0117<br>= วิโรจน์</div>
+<script>
+  // ?s=N แสดงเฉพาะพิรุธข้อ 1..N (ใช้ทำภาพเฉลยทีละขั้นในคลิป)
+  const n = new URLSearchParams(location.search).get('s');
+  if (n !== null) document.querySelectorAll('[data-s]').forEach(e => { if (+e.dataset.s > +n) e.style.display = 'none'; });
+</script>
 </body></html>
