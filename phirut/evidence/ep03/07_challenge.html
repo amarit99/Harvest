@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  body { position: relative; background: radial-gradient(ellipse 70% 40% at 50% 45%, #2a1416, #08070a 70%); }
+  .thumbs { position: absolute; left: 0; right: 0; top: 230px; height: 520px; }
+  .thumbs img { position: absolute; width: 300px; height: 533px; object-fit: cover; box-shadow: 0 20px 40px rgba(0,0,0,.8); border: 6px solid #f2ecdd; }
+  .q { position: absolute; left: 0; right: 0; top: 860px; text-align: center; font-family: 'Kanit'; color: #f2ecdd; }
+  .q .a { font-weight: 300; font-size: 50px; letter-spacing: 4px; }
+  .q .b { font-weight: 900; font-size: 104px; line-height: 1.25; margin-top: 10px; }
+  .q .b span { color: var(--red); }
+  .q .c { font-family: 'Sriracha'; font-size: 44px; color: #ffd36b; margin-top: 18px; }
+  .n { position: absolute; left: 50%; top: 1350px; transform: translateX(-50%); width: 230px; height: 230px; border-radius: 50%; border: 8px solid var(--red); display: grid; place-items: center; font-family: 'Kanit'; font-weight: 900; font-size: 140px; color: #fff; }
+</style></head>
+<body class="grain">
+  <div class="thumbs">
+    <img src="../../images/ep03/03_resign.png" style="left:60px; top:40px; transform:rotate(-8deg)">
+    <img src="../../images/ep03/06_visitors.png" style="left:720px; top:40px; transform:rotate(8deg)">
+    <img src="../../images/ep03/02_poster.png" style="left:390px; top:0; transform:rotate(0deg); z-index:2">
+  </div>
+  <div class="q">
+    <div class="a">หลักฐานครบแล้ว</div>
+    <div class="b">ใครสวมรอย<br><span>เป็นสุดา?</span></div>
+    <div class="c">ใบ้ให้: มี 5 จุด หยุดคลิปแล้วหาเลย 🔍</div>
+  </div>
+  <div class="n" id="n">3</div>
+  <script>const n = new URLSearchParams(location.search).get('n'); if (n) document.getElementById('n').textContent = n;</script>
+</body></html>

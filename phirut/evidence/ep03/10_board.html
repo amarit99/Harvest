@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  body { position: relative; background:
+      radial-gradient(ellipse 75% 55% at 50% 45%, rgba(255,215,150,.28), transparent 75%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .33  0 0 0 0 .16  0 0 0 .9 0'/></filter><rect width='100%' height='100%' fill='%23855a33'/><rect width='100%' height='100%' filter='url(%23c)'/></svg>"); }
+  .card { position: absolute; background: #fbf7ea; padding: 18px 24px; box-shadow: 0 14px 28px rgba(0,0,0,.5); font-size: 29px; line-height: 1.4; z-index: 2; width: 430px; }
+  .card h3 { margin: 0 0 4px; font-family: 'Kanit'; font-weight: 700; font-size: 31px; }
+  .card small { display: block; color: #8a2a2a; font-family: 'Kanit'; font-size: 24px; }
+  .who { position: absolute; left: 340px; top: 690px; width: 400px; background: #f4f1e8; padding: 18px 18px 64px; box-shadow: 0 16px 30px rgba(0,0,0,.6); z-index: 3; text-align: center; font-family: 'Kanit'; font-weight: 700; font-size: 40px; transform: rotate(-2deg); }
+  .who .ph { height: 330px; background: linear-gradient(#3b3a40, #1c1b20); position: relative; overflow: hidden; margin-bottom: 12px; }
+  .who .ph::before { content: ""; position: absolute; left: 50%; top: 70px; width: 130px; height: 130px; margin-left: -65px; border-radius: 50%; background: #0c0c0f; }
+  .who .ph::after { content: ""; position: absolute; left: 50%; bottom: -70px; width: 260px; height: 210px; margin-left: -130px; border-radius: 50% 50% 0 0; background: #0c0c0f; }
+  .who .q { position: absolute; left: 0; right: 0; top: 110px; font-size: 140px; color: var(--red); z-index: 2; font-weight: 900; }
+  .pin { position: absolute; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff8a8a, #c0262d 55%, #6d0f14); box-shadow: 4px 8px 8px rgba(0,0,0,.5); z-index: 6; }
+  svg.str { position: absolute; inset: 0; z-index: 1; }
+  .big { position: absolute; left: 70px; right: 70px; top: 1500px; z-index: 4; text-align: center; font-family: 'Sriracha'; font-size: 48px; color: #fff; background: rgba(15,10,8,.85); padding: 20px; border-radius: 12px; transform: rotate(-1deg); }
+  .big b { color: #ff5156; font-weight: 400; }
+</style></head>
+<body class="grain">
+  <div class="tag"><b>บอร์ดคดี</b> ชื่อที่อยู่ตรงหน้าเราตลอด</div>
+  <div class="card" style="left:60px; top:250px; transform:rotate(-3deg)"><small>คดีที่ ๑</small><h3>หจก.รุ่งเรืองค้าวัสดุ</h3>คนรับเงิน 2,000,000</div>
+  <div class="card" style="left:590px; top:280px; transform:rotate(2.5deg)"><small>คดีที่ ๒</small><h3>อาคารรุ่งเรืองพลาซ่า</h3>ที่ผมถูกผลัก · รปภ. ของตึก</div>
+  <div class="who"><div class="ph"></div><div class="q">?</div>ธวัช รุ่งเรือง</div>
+  <div class="card" style="left:60px; top:1180px; transform:rotate(2deg)"><small>12 พ.ค.</small><h3>อยู่ฝ่ายบัญชี 14.05–14.40</h3>บัตรสุดาหายพอดี</div>
+  <div class="card" style="left:590px; top:1170px; transform:rotate(-2deg)"><small>6 มิ.ย. · 8 มิ.ย.</small><h3>ใช้ชื่อ “สุดา” 2 ครั้ง</h3>บัตรแขก V-07 · ใบลาออกปลอม</div>
+  <svg class="str" viewBox="0 0 1080 1920" fill="none" stroke="#d1141b" stroke-width="5">
+    <path d="M280 300 Q 380 600 540 720"/><path d="M800 330 Q 700 600 540 720"/>
+    <path d="M540 720 Q 380 1000 280 1200"/><path d="M540 720 Q 700 1000 800 1190"/>
+  </svg>
+  <div class="pin" style="left:280px; top:262px"></div><div class="pin" style="left:800px; top:292px"></div>
+  <div class="pin" style="left:540px; top:705px"></div>
+  <div class="pin" style="left:280px; top:1195px"></div><div class="pin" style="left:800px; top:1183px"></div>
+  <div class="big">ชื่อ “รุ่งเรือง” อยู่ตรงหน้าเรา<b>ตั้งแต่คดีแรก</b></div>
+</body></html>
