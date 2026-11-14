@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  /* บอร์ดไม้ก๊อกที่ออฟฟิศ */
+  body.cork {
+    background:
+      radial-gradient(ellipse 70% 50% at 50% 40%, rgba(255,230,180,.22), transparent 70%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/><feColorMatrix values='0 0 0 0 .55  0 0 0 0 .36  0 0 0 0 .18  0 0 0 .9 0'/></filter><rect width='100%' height='100%' fill='%23a06b3c'/><rect width='100%' height='100%' filter='url(%23c)'/></svg>");
+    position: relative;
+  }
+  .scrap { position: absolute; background: #fbf6e6; box-shadow: 0 12px 26px rgba(0,0,0,.45); padding: 22px; font-size: 24px; color: #444; }
+  .paper { left: 110px; top: 390px; width: 860px; height: 1080px; padding: 64px 66px; transform: rotate(-.8deg); font-size: 27px; line-height: 1.75; background: #fbfaf6; }
+  .bar { display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #1e3d6e; padding-bottom: 14px; }
+  .bar h1 { margin: 0; font-family: 'Kanit'; font-weight: 700; font-size: 40px; color: #1e3d6e; }
+  .bar span { font-family: 'Kanit'; font-size: 22px; color: #1e3d6e; }
+  .meta { display: flex; justify-content: space-between; margin: 20px 0 10px; font-size: 24px; color: #444; }
+  p { margin: 14px 0; }
+  .hl { background: linear-gradient(180deg, transparent 52%, rgba(255,226,60,.75) 52%); padding: 0 4px; }
+  ul { margin: 6px 0; padding-left: 36px; }
+  .pin { position: absolute; width: 46px; height: 46px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff8a8a, #c0262d 55%, #6d0f14); box-shadow: 4px 10px 10px rgba(0,0,0,.5); z-index: 5; }
+  .from { margin-top: 30px; text-align: right; font-size: 24px; }
+</style></head>
+<body class="cork grain">
+  <div class="tag"><b>หลักฐาน ๓</b> ประกาศบนบอร์ดออฟฟิศ</div>
+  <div class="scrap" style="left:60px;top:250px;width:330px;transform:rotate(-6deg)">📌 ประชุมประจำเดือน<br>ศุกร์ 9:30 ห้อง 2</div>
+  <div class="scrap" style="right:50px;top:1560px;width:360px;transform:rotate(5deg);background:#fff59d">ใครเอาแก้วสีเขียวไป<br>คืนด้วย!!! — ฝ่ายขาย</div>
+  <div class="paper">
+    <div class="bar"><h1>ประกาศฝ่ายเทคโนโลยีสารสนเทศ</h1><span>IT</span></div>
+    <div class="meta"><span>ที่ ธก.IT 009/2569</span><span>วันที่ 25 เมษายน 2569</span></div>
+    <p><b>เรื่อง</b>&nbsp; อัปเดตระบบบัญชี THANAKORN ERP</p>
+    <p>ฝ่าย IT จะอัปเดตระบบ THANAKORN ERP จากเวอร์ชัน 3.1 เป็น<b>เวอร์ชัน 3.2</b> ใน<span class="hl">วันเสาร์ที่ 2 พฤษภาคม 2569</span> ระหว่างเวลา 08.00 – 17.00 น. ระหว่างนี้จะใช้งานระบบไม่ได้</p>
+    <p>สิ่งที่เปลี่ยนแปลง</p>
+    <ul>
+      <li><span class="hl">เอกสารทุกฉบับที่สั่งพิมพ์หลังการอัปเดต จะแสดง “v3.2” ที่ท้ายกระดาษ</span></li>
+      <li>ท้ายเอกสารจะแสดงรหัสผู้สั่งพิมพ์ในรูปแบบ USR-<i>รหัสพนักงาน</i></li>
+      <li>ปรับหน้าจอการอนุมัติให้ใช้งานง่ายขึ้น</li>
+    </ul>
+    <div class="from">ฝ่ายเทคโนโลยีสารสนเทศ<br>โทร. ภายใน 204</div>
+  </div>
+  <div class="pin" style="left:520px;top:365px"></div>
+  <div class="pin" style="left:200px;top:236px;transform:scale(.8)"></div>
+</body></html>

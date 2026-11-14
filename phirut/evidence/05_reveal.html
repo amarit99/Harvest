@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  body { background: #000; position: relative; }
+  iframe { position: absolute; inset: 0; width: 1080px; height: 1920px; border: 0; }
+  .dim { position: absolute; inset: 0; background: rgba(0,0,0,.18); }
+  svg.marks { position: absolute; inset: 0; z-index: 60; }
+  .note {
+    position: absolute; z-index: 61;
+    font-family: 'Sriracha'; font-size: 34px; line-height: 1.3; color: #fff;
+    background: rgba(170,18,24,.92); padding: 10px 20px; border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.5);
+  }
+  .note i { font-style: normal; display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #fff; color: #b01219; font-family: 'Kanit'; font-weight: 700; font-size: 28px; margin-right: 10px; vertical-align: 2px; }
+  .cover { position: absolute; left: 0; right: 0; top: 0; height: 250px; z-index: 59; background: linear-gradient(#0b0806 75%, transparent); }
+  .tag { z-index: 62; }
+</style></head>
+<body class="grain">
+  <iframe src="03_voucher.html"></iframe>
+  <div class="dim"></div>
+  <div class="cover"></div>
+  <div class="tag"><b>เฉลย</b> พิรุธในใบสำคัญจ่าย</div>
+  <svg class="marks" viewBox="0 0 1080 1920" fill="none" stroke="#ff2a2f" stroke-width="7" stroke-linecap="round">
+    <ellipse cx="860" cy="816" rx="140" ry="44" transform="rotate(-3 860 816)"/>
+    <ellipse cx="860" cy="1028" rx="140" ry="44" transform="rotate(2 860 1028)"/>
+    <ellipse cx="500" cy="1106" rx="150" ry="40" transform="rotate(-2 500 1106)"/>
+    <ellipse cx="225" cy="1536" rx="120" ry="34"/>
+    <ellipse cx="585" cy="1541" rx="120" ry="34"/>
+    <path d="M630 1110 Q 700 1080 720 1050"/>
+  </svg>
+  <div class="note" style="left:470px; top:690px; transform:rotate(-2deg)"><i>1</i>ตัวเลข = 2 ล้าน</div>
+  <div class="note" style="left:90px; top:1170px; transform:rotate(1deg)"><i>2</i>แต่ตัวหนังสือ = “สองแสน”!</div>
+  <div class="note" style="left:470px; top:1240px; transform:rotate(-1deg); font-size:30px"><i>3</i>ฟอนต์ตัวเลขไม่เหมือน<br>ทั้งเอกสาร → ถูกแก้ทีหลัง</div>
+  <div class="note" style="left:60px; top:1610px; transform:rotate(-1.5deg); font-size:30px"><i>4</i>v3.2 = พิมพ์หลัง 2 พ.ค.<br>ผมถูกตัดสิทธิ์ตั้งแต่ 28 เม.ย.</div>
+  <div class="note" style="left:600px; top:1610px; transform:rotate(1.5deg); font-size:30px"><i>5</i>USR-0117<br>= วิโรจน์</div>
+</body></html>

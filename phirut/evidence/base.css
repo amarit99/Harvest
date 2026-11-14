@@ -1,0 +1,89 @@
+/* พิรุธ — สไตล์กลางของภาพหลักฐาน (1080x1920, 9:16) */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&family=Kanit:wght@300;500;700;900&family=Charmonman:wght@400;700&family=Sriracha&family=Noto+Sans+Thai:wght@500;700&display=block');
+
+:root {
+  --paper: #f2ecdd;
+  --paper-edge: #e2d7bf;
+  --ink: #1f1d24;
+  --ink-soft: #4a4552;
+  --red: #c0262d;
+  --blue-stamp: #2b4c9b;
+  --marker: #e0262b;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  font-family: 'Sarabun', sans-serif;
+  color: var(--ink);
+}
+
+/* โต๊ะไม้มืด ๆ ใต้ไฟโคมตั้งโต๊ะ */
+body.desk {
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 38%, rgba(255, 200, 120, .38) 0%, rgba(255, 180, 90, .10) 45%, transparent 75%),
+    repeating-linear-gradient(92deg, rgba(0,0,0,.18) 0 3px, transparent 3px 14px, rgba(255,255,255,.03) 14px 16px, transparent 16px 40px),
+    linear-gradient(180deg, #3a2a1c 0%, #24180f 55%, #0b0806 100%);
+}
+
+/* เกรนฟิล์ม + ขอบมืด */
+.grain::before {
+  content: "";
+  position: absolute; inset: 0; z-index: 50; pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  opacity: .35;
+  mix-blend-mode: overlay;
+}
+.grain::after {
+  content: "";
+  position: absolute; inset: 0; z-index: 51; pointer-events: none;
+  background: radial-gradient(ellipse 80% 70% at 50% 42%, transparent 55%, rgba(0,0,0,.75) 100%);
+}
+
+/* กระดาษ */
+.paper {
+  position: absolute;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(ellipse at 80% 90%, rgba(150,120,70,.18), transparent 55%),
+    var(--paper);
+  box-shadow:
+    0 2px 0 var(--paper-edge),
+    0 30px 60px rgba(0,0,0,.65),
+    0 8px 18px rgba(0,0,0,.45);
+}
+.paper::before { /* เนื้อกระดาษ */
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='p'><feTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .28  0 0 0 0 .18  0 0 0 .25 0'/></filter><rect width='100%' height='100%' filter='url(%23p)'/></svg>");
+  mix-blend-mode: multiply;
+}
+
+.sig { font-family: 'Charmonman', cursive; color: #1d2b6b; }
+.hand { font-family: 'Sriracha', cursive; }
+
+.stamp {
+  position: absolute;
+  font-family: 'Kanit', sans-serif; font-weight: 700;
+  border: 6px solid currentColor; border-radius: 10px;
+  padding: 4px 22px; letter-spacing: 4px;
+  opacity: .78;
+  mix-blend-mode: multiply;
+  filter: url(#rough);
+}
+
+/* ป้ายกำกับหลักฐานด้านบน (อยู่ในโซนปลอดภัย ไม่โดน UI ของ Reels/Shorts บัง) */
+.tag {
+  position: absolute; left: 60px; top: 120px; z-index: 40;
+  font-family: 'Kanit', sans-serif; font-weight: 500;
+  color: #f4e9d2; font-size: 38px; letter-spacing: 2px;
+  display: flex; align-items: center; gap: 18px;
+  text-shadow: 0 3px 12px rgba(0,0,0,.8);
+}
+.tag b {
+  background: var(--red); color: #fff; font-weight: 700;
+  padding: 6px 18px; border-radius: 6px; font-size: 32px;
+}

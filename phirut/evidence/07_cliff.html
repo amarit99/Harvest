@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  body { position: relative; background:
+    radial-gradient(ellipse 55% 30% at 50% 45%, rgba(255,205,130,.30), transparent 75%),
+    repeating-linear-gradient(92deg, rgba(0,0,0,.2) 0 3px, transparent 3px 14px, rgba(255,255,255,.03) 14px 16px, transparent 16px 40px),
+    linear-gradient(180deg, #1d150e 0%, #0d0906 60%, #050403 100%); }
+  .note {
+    position: absolute; left: 150px; top: 610px; width: 780px; height: 620px;
+    background: repeating-linear-gradient(180deg, transparent 0 63px, rgba(70,110,180,.35) 63px 65px), #f1ead6;
+    transform: rotate(-3deg);
+    box-shadow: 0 30px 60px rgba(0,0,0,.75);
+    clip-path: polygon(0 3%, 6% 0, 14% 2%, 22% 0, 31% 2.5%, 40% 0, 50% 2%, 61% 0, 72% 2.5%, 83% 0, 92% 2%, 100% 0, 100% 100%, 0 100%);
+    padding: 120px 60px 0 110px;
+  }
+  .note::after { content: ""; position: absolute; left: 80px; top: 0; bottom: 0; width: 3px; background: rgba(200,60,60,.5); }
+  .note p { margin: 0; font-family: 'Sriracha'; font-size: 74px; line-height: 1.7; color: #18161d; transform: rotate(-1deg); }
+  .note p.s { font-size: 44px; color: #555; margin-top: 30px; }
+  .smear { position: absolute; right: 70px; bottom: 60px; width: 170px; height: 90px; border-radius: 50%; background: radial-gradient(rgba(90,10,10,.55), transparent 70%); }
+  .cap { position: absolute; left: 0; right: 0; top: 1360px; text-align: center; font-family: 'Kanit'; font-weight: 300; font-size: 44px; letter-spacing: 6px; color: #cdbf9f; }
+  .cap b { display: block; font-weight: 700; font-size: 60px; color: #fff; letter-spacing: 2px; margin-top: 12px; }
+</style></head>
+<body class="grain">
+  <div class="note">
+    <p>คุณไม่ได้<br>ตกบันไดเอง</p>
+    <p class="s">— อย่าไว้ใจใครในตึกนั้น</p>
+    <div class="smear"></div>
+  </div>
+  <div class="cap">โน้ตที่ถูกสอดใต้ประตูห้องผม<b>ตีสามคืนนั้น</b></div>
+</body></html>

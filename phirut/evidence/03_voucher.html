@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  .paper { left: 80px; top: 290px; width: 920px; height: 1300px; padding: 60px 64px; transform: rotate(1.2deg); font-size: 25px; line-height: 1.6; }
+  .head { display: flex; justify-content: space-between; align-items: flex-start; }
+  .co { font-family: 'Kanit'; font-weight: 500; font-size: 30px; line-height: 1.3; }
+  .co small { display: block; font-family: 'Sarabun'; font-size: 18px; color: var(--ink-soft); font-weight: 400; }
+  .doc { text-align: right; }
+  .doc h1 { margin: 0; font-family: 'Kanit'; font-weight: 700; font-size: 42px; letter-spacing: 1px; }
+  .doc h1 small { display: block; font-size: 18px; letter-spacing: 6px; color: var(--ink-soft); font-weight: 500; }
+  .row { display: flex; gap: 14px; margin-top: 8px; }
+  .row b { min-width: 130px; font-weight: 600; }
+  .box { margin-top: 30px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 26px; font-size: 24px; }
+  th, td { border: 1.5px solid #3a3640; padding: 10px 14px; }
+  th { background: rgba(30,61,110,.10); font-weight: 600; }
+  td.num { text-align: right; width: 260px; font-family: 'Sarabun'; }
+  .empty td { height: 56px; }
+  /* ตัวเลขที่ถูกแก้: ฟอนต์ต่างจากทั้งเอกสาร หนากว่า และลอยสูงกว่าเส้น */
+  .forged { font-family: 'Noto Sans Thai', 'Liberation Sans', sans-serif !important; font-weight: 700; letter-spacing: -.5px; position: relative; top: -3px; left: 4px; color: #141218; }
+  .words { margin-top: 18px; padding: 12px 16px; border: 1.5px dashed #6b6573; font-size: 25px; }
+  .words b { font-weight: 600; }
+  .signs { display: flex; justify-content: space-between; margin-top: 70px; text-align: center; font-size: 21px; }
+  .signs div { width: 250px; }
+  .signs .sig { font-size: 50px; line-height: 1.1; display: block; height: 66px; border-bottom: 1.5px dotted #333; }
+  .footer { position: absolute; left: 64px; right: 64px; bottom: 34px; display: flex; justify-content: space-between; font-family: 'Liberation Mono', monospace; font-size: 17px; color: #8a8490; }
+  .reveal-only { display: none; }
+</style></head>
+<body class="desk grain">
+  <svg width="0" height="0" style="position:absolute"><filter id="rough"><feTurbulence baseFrequency=".05" numOctaves="2"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter></svg>
+  <div class="tag"><b>หลักฐาน ๒</b> ใบสำคัญจ่าย</div>
+  <div class="paper">
+    <div class="head">
+      <div class="co">บริษัท ธนากรวัสดุ จำกัด<small>เลขประจำตัวผู้เสียภาษี 0105556012345</small></div>
+      <div class="doc"><h1>ใบสำคัญจ่าย<small>PAYMENT VOUCHER</small></h1></div>
+    </div>
+    <div class="box">
+      <div class="row"><b>เลขที่</b> PV-2569/0312</div>
+      <div class="row"><b>วันที่</b> 10 มีนาคม 2569</div>
+      <div class="row"><b>จ่ายให้</b> ห้างหุ้นส่วนจำกัด รุ่งเรืองค้าวัสดุ</div>
+      <div class="row"><b>ชำระโดย</b> โอนเงิน ธนาคารกรุงสยาม บัญชี 112-4-08xxx</div>
+    </div>
+    <table>
+      <tr><th style="width:70px">ลำดับ</th><th>รายการ</th><th>จำนวนเงิน (บาท)</th></tr>
+      <tr><td style="text-align:center">1</td><td>ค่าเหล็กเส้น DB12 งวดที่ 3<br><span style="font-size:20px;color:#5b5562">ตามใบสั่งซื้อ PO-2569/0098 (รวมภาษีมูลค่าเพิ่มแล้ว)</span></td><td class="num"><span class="forged">2,000,000.00</span></td></tr>
+      <tr class="empty"><td></td><td></td><td></td></tr>
+      <tr class="empty"><td></td><td></td><td></td></tr>
+      <tr><td></td><td style="text-align:right;font-weight:600">รวมทั้งสิ้น</td><td class="num"><span class="forged">2,000,000.00</span></td></tr>
+    </table>
+    <div class="words"><b>จำนวนเงิน (ตัวอักษร):</b> (สองแสนบาทถ้วน)</div>
+    <div class="signs">
+      <div><span class="sig" style="font-size:38px;padding-top:14px">สุดา</span>ผู้จัดทำ<br>(น.ส.สุดา ใจเย็น)</div>
+      <div><span class="sig">วิโรจน์ ก.</span>ผู้ตรวจสอบ<br>(นายวิโรจน์ เก่งการค้า)</div>
+      <div><span class="sig">ภาสกร</span>ผู้อนุมัติ<br>(นายภาสกร มั่นคง)</div>
+    </div>
+    <div class="stamp" style="color:var(--blue-stamp); left:300px; top:620px; transform:rotate(-12deg); font-size:54px;">จ่ายแล้ว</div>
+    <div class="footer"><span>THANAKORN ERP v3.2</span><span>ผู้พิมพ์: USR-0117</span><span>หน้า 1/1</span></div>
+  </div>
+</body></html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  body { background: #07070a; position: relative; }
+  .beam {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(circle 360px at 50% 40%, rgba(255,214,150,.30), rgba(255,190,110,.10) 55%, transparent 72%),
+      linear-gradient(180deg, #111018 0%, #07070a 100%);
+  }
+  /* ตัวอักษรเอกสารจาง ๆ ด้านหลัง */
+  .ghost {
+    position: absolute; inset: 0; padding: 140px 70px;
+    font-family: 'Sarabun'; font-size: 30px; line-height: 1.9;
+    color: rgba(255,255,255,.07); word-break: break-all;
+  }
+  .ghost em { color: rgba(230,40,45,.55); font-style: normal; font-weight: 700; }
+  .ring {
+    position: absolute; left: 50%; top: 40%; width: 560px; height: 560px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 3px solid rgba(255,225,180,.35);
+    box-shadow: 0 0 80px rgba(255,200,120,.18), inset 0 0 60px rgba(255,200,120,.12);
+  }
+  .title {
+    position: absolute; left: 0; right: 0; top: 590px; text-align: center;
+    font-family: 'Kanit'; font-weight: 900; font-size: 300px; line-height: 1;
+    color: #f1e6cf; letter-spacing: 6px;
+    text-shadow: 0 10px 40px rgba(0,0,0,.9);
+  }
+  .title span { color: var(--red); }
+  .crack {
+    position: absolute; left: 0; right: 0; top: 590px; height: 310px;
+  }
+  .sub {
+    position: absolute; left: 0; right: 0; top: 960px; text-align: center;
+    font-family: 'Kanit'; font-weight: 500; font-size: 56px; color: #e8dcc3; letter-spacing: 3px;
+  }
+  .sub small { display: block; font-size: 34px; color: var(--red); letter-spacing: 10px; margin-bottom: 10px; font-weight: 700; }
+  .line {
+    position: absolute; left: 50%; top: 1150px; transform: translateX(-50%);
+    width: 820px; text-align: center;
+    font-family: 'Sarabun'; font-weight: 300; font-size: 44px; line-height: 1.6; color: #cfc4ae;
+  }
+  .line b { font-weight: 600; color: #fff; }
+</style></head>
+<body class="grain">
+  <div class="beam"></div>
+  <div class="ghost">ใบสำคัญจ่าย PV-2569/0312 จ่ายให้ หจก.รุ่งเรืองค้าวัสดุ จำนวนเงิน <em>2,000,000.00</em> บาท (สองแสนบาทถ้วน) ผู้อนุมัติ ภาสกร มั่นคง ผู้ตรวจสอบ วิโรจน์ เก่งการค้า ธนากร ERP v3.2 ผู้พิมพ์ USR-0117 เลิกจ้าง 28 เมษายน 2569 ระงับสิทธิ์การเข้าใช้ระบบทั้งหมดทันที อัปเดตระบบ 2 พฤษภาคม 2569 ใบสำคัญจ่าย PV-2569/0312 จ่ายให้ หจก.รุ่งเรืองค้าวัสดุ จำนวนเงิน <em>2,000,000.00</em> บาท ผู้อนุมัติ ภาสกร มั่นคง ผู้ตรวจสอบ วิโรจน์ เก่งการค้า ธนากร ERP v3.2 ผู้พิมพ์ USR-0117 เลิกจ้าง 28 เมษายน 2569 ระงับสิทธิ์การเข้าใช้ระบบทั้งหมดทันที อัปเดตระบบ 2 พฤษภาคม 2569</div>
+  <div class="ring"></div>
+  <div class="title">พิรุ<span>ธ</span></div>
+  <svg class="crack" viewBox="0 0 1080 310" preserveAspectRatio="none">
+    <path d="M610 0 L590 70 L630 120 L585 190 L612 240 L595 310" stroke="#07070a" stroke-width="9" fill="none"/>
+    <path d="M630 120 L690 150 M585 190 L540 210" stroke="#07070a" stroke-width="5" fill="none"/>
+  </svg>
+  <div class="sub"><small>คดีที่ ๑</small>ใบเสร็จสองล้าน</div>
+  <div class="line">“สมองผมพังไปครึ่งหนึ่ง<br><b>อีกครึ่ง…เห็นทุกอย่าง</b>”</div>
+</body></html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  body {
+    position: relative;
+    background:
+      radial-gradient(ellipse 75% 55% at 50% 45%, rgba(255,215,150,.28), transparent 75%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .33  0 0 0 0 .16  0 0 0 .9 0'/></filter><rect width='100%' height='100%' fill='%23855a33'/><rect width='100%' height='100%' filter='url(%23c)'/></svg>");
+  }
+  .card { position: absolute; background: #fbf7ea; padding: 22px 26px; box-shadow: 0 14px 28px rgba(0,0,0,.5); font-size: 30px; line-height: 1.45; z-index: 2; }
+  .card h3 { margin: 0 0 6px; font-family: 'Kanit'; font-weight: 700; font-size: 34px; }
+  .card .d { font-family: 'Kanit'; font-weight: 700; color: var(--red); font-size: 40px; }
+  .yellow { background: #fff27a; }
+  .photo { position: absolute; background: #f4f1e8; padding: 18px 18px 60px; box-shadow: 0 14px 28px rgba(0,0,0,.55); z-index: 2; text-align: center; font-family: 'Sriracha'; font-size: 30px; }
+  .photo .ph { width: 250px; height: 290px; background: linear-gradient(#3b3a40, #1c1b20); position: relative; overflow: hidden; }
+  .photo .ph::before { content: ""; position: absolute; left: 50%; top: 58px; width: 110px; height: 110px; margin-left: -55px; border-radius: 50%; background: #0c0c0f; }
+  .photo .ph::after { content: ""; position: absolute; left: 50%; bottom: -60px; width: 220px; height: 180px; margin-left: -110px; border-radius: 50% 50% 0 0; background: #0c0c0f; }
+  .photo .q { position: absolute; left: 0; right: 0; top: 90px; font-family: 'Kanit'; font-weight: 900; font-size: 110px; color: var(--red); z-index: 3; }
+  .photo .x { position: absolute; inset: 18px 18px 60px; z-index: 3; }
+  .pin { position: absolute; width: 40px; height: 40px; margin: -20px 0 0 -20px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #ff8a8a, #c0262d 55%, #6d0f14); box-shadow: 4px 8px 8px rgba(0,0,0,.5); z-index: 6; }
+  svg.str { position: absolute; inset: 0; z-index: 1; }
+  .big { position: absolute; left: 70px; right: 70px; bottom: 250px; z-index: 4; text-align: center; font-family: 'Sriracha'; font-size: 52px; color: #fff; background: rgba(15,10,8,.82); padding: 22px; border-radius: 12px; transform: rotate(-1deg); }
+  .big b { color: #ff5156; font-weight: 400; }
+</style></head>
+<body class="grain">
+  <div class="tag"><b>บอร์ดคดี</b> ใบเสร็จสองล้าน</div>
+
+  <div class="photo" style="left:80px; top:240px; transform:rotate(-4deg)"><div class="ph"></div><svg class="x" viewBox="0 0 250 290"><path d="M20 20 L230 270 M230 20 L20 270" stroke="#c0262d" stroke-width="10" opacity=".85"/></svg>ภาสกร (ผม)</div>
+  <div class="photo" style="left:720px; top:250px; transform:rotate(5deg)"><div class="ph"></div><div class="q">?</div>วิโรจน์ · 0117</div>
+
+  <div class="card" style="left:90px; top:790px; width:420px; transform:rotate(-2deg)"><div class="d">28 เม.ย.</div>ผมถูกไล่ออก<br>ระบบ<b>ตัดสิทธิ์ทันที</b></div>
+  <div class="card" style="left:570px; top:760px; width:420px; transform:rotate(2.5deg)"><div class="d">2 พ.ค.</div>ERP อัปเดตเป็น v3.2</div>
+  <div class="card" style="left:330px; top:1080px; width:440px; transform:rotate(-1deg)"><h3>PV-0312</h3>พิมพ์ด้วย <b>v3.2</b><br>ผู้พิมพ์ <b>USR-0117</b></div>
+  <div class="card yellow hand" style="left:100px; top:1290px; width:420px; transform:rotate(3deg); font-size:32px">200,000<br>→ 2,000,000<br>เติมศูนย์ตัวเดียว</div>
+  <div class="card yellow hand" style="left:580px; top:1285px; width:400px; transform:rotate(-3deg); font-size:32px">1,800,000<br>ไปอยู่ที่ไหน?</div>
+
+  <svg class="str" viewBox="0 0 1080 1920" fill="none" stroke="#d1141b" stroke-width="5">
+    <path d="M300 830 Q 420 1000 550 1100"/>
+    <path d="M780 800 Q 680 960 550 1100"/>
+    <path d="M550 1100 Q 760 760 870 280"/>
+    <path d="M550 1100 Q 400 1230 310 1310"/>
+    <path d="M310 1310 Q 540 1250 780 1305"/>
+  </svg>
+  <div class="pin" style="left:870px; top:280px"></div>
+  <div class="pin" style="left:215px; top:262px"></div>
+  <div class="pin" style="left:300px; top:830px"></div>
+  <div class="pin" style="left:780px; top:800px"></div>
+  <div class="pin" style="left:550px; top:1100px"></div>
+  <div class="pin" style="left:310px; top:1310px"></div>
+  <div class="pin" style="left:780px; top:1305px"></div>
+  <div class="big">คนที่ไล่ผมออก… <b>คือคนพิมพ์ใบนี้</b></div>
+</body></html>
