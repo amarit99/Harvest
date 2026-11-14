@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  body { position: relative; background:
+      radial-gradient(ellipse 75% 55% at 50% 45%, rgba(255,215,150,.28), transparent 75%),
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .33  0 0 0 0 .16  0 0 0 .9 0'/></filter><rect width='100%' height='100%' fill='%23855a33'/><rect width='100%' height='100%' filter='url(%23c)'/></svg>"); }
+  .line { position: absolute; left: 190px; top: 250px; height: 1130px; width: 8px; background: #d1141b; }
+  .ev { position: absolute; left: 140px; display: flex; align-items: center; gap: 30px; }
+  .ev .dot { width: 108px; height: 108px; flex: none; border-radius: 50%; background: #f8f3e3; border: 6px solid #d1141b; display: grid; place-items: center; font-family: 'Kanit'; font-weight: 700; font-size: 30px; box-shadow: 0 8px 16px rgba(0,0,0,.45); z-index: 2; }
+  .ev .card { background: #fbf7ea; padding: 14px 24px; font-size: 31px; line-height: 1.35; box-shadow: 0 10px 22px rgba(0,0,0,.45); width: 700px; }
+  .ev .card small { display: block; font-size: 23px; color: #666; }
+  .ev.hot .dot { background: #d1141b; color: #fff; }
+  .ev.hot .card { background: #fff27a; font-family: 'Sriracha'; }
+  .ev.fake .card { background: #dfe8ff; text-decoration: line-through; text-decoration-color: #d1141b; text-decoration-thickness: 4px; }
+  .q { position: absolute; left: 70px; right: 70px; top: 1440px; text-align: center; font-family: 'Sriracha'; font-size: 48px; color: #fff; background: rgba(15,10,8,.85); padding: 20px; border-radius: 12px; transform: rotate(-1deg); }
+  .q b { color: #ff5156; font-weight: 400; }
+</style></head>
+<body class="grain">
+  <div class="tag"><b>บอร์ดคดี</b> คืนวันที่ 6 มิ.ย. (ฉบับเต็ม)</div>
+  <div class="line"></div>
+  <div class="ev" style="top:240px"><div class="dot">19:10</div><div class="card">ธวัชพูดบนเวทีกาล่า · ถ่ายรูป<small>หลักฐาน ๑ (นาฬิกาในรูป)</small></div></div>
+  <div class="ev" style="top:380px"><div class="dot">21:05</div><div class="card">รถ รร 9999 เข้ารุ่งเรืองพลาซ่า B2</div></div>
+  <div class="ev" style="top:520px"><div class="dot">21:12</div><div class="card">“สุดา” (บัตร V-07) ขึ้นชั้น 4<small>คดีที่ ๓: ใช้บัตรประชาชนที่ขโมยมา</small></div></div>
+  <div class="ev hot" style="top:670px"><div class="dot">21:40</div><div class="card">ผมถูกผลัก ✋✋</div></div>
+  <div class="ev fake" style="top:800px"><div class="dot">21:40</div><div class="card">โพสต์ “ผมอยู่งานตลอดทั้งคืน” (ตั้งเวลาไว้)</div></div>
+  <div class="ev hot" style="top:930px"><div class="dot">21:44</div><div class="card">V-07 ออกประตูหนีไฟ B2</div></div>
+  <div class="ev hot" style="top:1060px"><div class="dot">21:47</div><div class="card">รถ รร 9999 ออกทาง B2</div></div>
+  <div class="ev" style="top:1190px"><div class="dot">8 มิ.ย.</div><div class="card">รปภ. ได้ 50,000 “ค่าล่วงเวลา”</div></div>
+  <div class="q">ไม่มีใครส่งคนมาทำแทน… <b>เขามาเอง</b></div>
+</body></html>
