@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  body { position: relative; background: radial-gradient(ellipse 60% 35% at 50% 42%, rgba(200,230,255,.18), transparent 75%), linear-gradient(180deg, #10141a, #050608); }
+  .paper { left: 90px; top: 270px; width: 900px; height: 1020px; padding: 54px 60px; transform: rotate(-1.5deg); font-size: 27px; line-height: 1.65; background: #f6f6f2; }
+  .hd { display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #1b7a6e; padding-bottom: 10px; }
+  .hd h1 { margin: 0; font-family: 'Kanit'; font-weight: 700; font-size: 34px; color: #1b7a6e; }
+  .hd span { font-family: 'Kanit'; color: #1b7a6e; font-size: 22px; }
+  .scan { height: 260px; margin: 20px 0; background: #050608; position: relative; }
+  .scan::before { content: ""; position: absolute; left: 50%; top: 50%; width: 230px; height: 280px; transform: translate(-50%,-50%); border-radius: 48%; background: repeating-radial-gradient(ellipse, #6e747a 0 6px, #858b91 6px 11px); }
+  .scan::after { content: ""; position: absolute; left: 36%; top: 40%; width: 80px; height: 80px; border-radius: 50%; background: radial-gradient(circle, #fff 0, rgba(255,255,255,.75) 35%, transparent 70%); }
+  .doc { margin-top: 16px; padding: 16px 22px; border-left: 6px solid #c0262d; background: rgba(192,38,45,.06); }
+  .doc .hand { font-family: 'Sriracha'; font-size: 32px; color: #1d2b6b; line-height: 1.5; }
+  .cap { position: absolute; left: 0; right: 0; top: 1350px; text-align: center; font-family: 'Kanit'; font-weight: 300; font-size: 42px; color: #cdbf9f; letter-spacing: 2px; }
+  .cap b { display: block; font-weight: 700; font-size: 58px; color: #fff; }
+</style></head>
+<body class="grain">
+  <svg width="0" height="0" style="position:absolute"><filter id="rough"><feTurbulence baseFrequency=".05" numOctaves="2"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter></svg>
+  <div class="paper">
+    <div class="hd"><h1>ผล CT สมอง (ติดตามอาการ)</h1><span>รพ.กลางนคร · 28 ส.ค. 2569</span></div>
+    <div>ผู้ป่วย: นายภาสกร มั่นคง · อาการ: ปวดศีรษะซ้ายรุนแรงขึ้น</div>
+    <div class="scan"></div>
+    <div><b>ผลตรวจ:</b> พบเลือดออกซ้ำบริเวณขมับซ้าย ขนาดใหญ่ขึ้น</div>
+    <div class="doc"><div class="hand">แนะนำผ่าตัดภายใน 30 วัน<br>หลังผ่าตัด อาการ “มองเห็นรายละเอียดผิดปกติ”<br>ของผู้ป่วย <u>อาจหายไปถาวร</u> — พญ.อรวรรณ</div></div>
+    <div class="stamp" style="color:var(--red); right:50px; top:120px; transform:rotate(-9deg); font-size:40px;">ด่วน</div>
+  </div>
+  <div class="cap">ถ้าผ่า ผมรอด…<b>แต่ผมจะกลับไปเป็นคนธรรมดา</b></div>
+</body></html>

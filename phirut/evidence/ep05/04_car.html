@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="th"><head><meta charset="utf-8"><link rel="stylesheet" href="../base.css">
+<style>
+  .paper { left: 90px; top: 320px; width: 900px; height: 1060px; padding: 56px 60px; transform: rotate(-1.6deg); font-size: 27px; line-height: 1.7; background: #fbfaf6; }
+  .hd { display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid #c0262d; padding-bottom: 10px; }
+  .hd h1 { margin: 0; font-family: 'Kanit'; font-weight: 700; font-size: 36px; color: #c0262d; }
+  .hd span { font-family: 'Kanit'; font-size: 24px; }
+  .row { display: flex; gap: 12px; margin-top: 6px; } .row b { min-width: 200px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+  th, td { border: 1.5px solid #555; padding: 10px 14px; } td.n { text-align: right; }
+  .note { position: absolute; left: -10px; bottom: -130px; width: 480px; padding: 20px; background: #c9f2ff; font-family: 'Sriracha'; font-size: 28px; transform: rotate(-5deg); box-shadow: 0 10px 20px rgba(0,0,0,.5); }
+</style></head>
+<body class="desk grain">
+  <svg width="0" height="0" style="position:absolute"><filter id="rough"><feTurbulence baseFrequency=".05" numOctaves="2"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter></svg>
+  <div class="tag"><b>หลักฐาน ๓</b> ใบเสร็จดาวน์รถ (จากเซลส์ต้น)</div>
+  <div class="paper">
+    <div class="hd"><h1>ใบเสร็จรับเงิน</h1><span>เมืองใหม่ออโต้ (สมมติ)</span></div>
+    <div class="row"><b>วันที่</b> <span data-hl="3" data-pad="10">10 มิถุนายน 2569</span></div>
+    <div class="row"><b>ผู้ซื้อ</b> ร.ต.ท. สมหมาย ทำตามสั่ง</div>
+    <div class="row"><b>อาชีพ / รายได้</b> ข้าราชการตำรวจ · 28,500 บาท/เดือน</div>
+    <table>
+      <tr><th>รายการ</th><th style="width:260px">จำนวนเงิน</th></tr>
+      <tr><td>เงินดาวน์ รถกระบะ 4 ประตู (ตัวท็อป)</td><td class="n">300,000.00</td></tr>
+      <tr><td>ชำระโดย</td><td class="n" data-hl="3" data-pad="10"><b>เงินสด</b></td></tr>
+    </table>
+    <div class="stamp" style="color:var(--blue-stamp); right:60px; top:640px; transform:rotate(-10deg); font-size:44px;">ชำระแล้ว</div>
+    <div class="note">เซลส์ต้น: “พี่แกหิ้วถุงผ้ามา นับแบงก์พันกันมือหงิกเลย”</div>
+    <div data-s="3" class="rnote" style="left:30px; top:110px; transform:rotate(1.5deg)"><i>3</i>3 วันหลังปิดคดีผม · เงินสด 10 เท่าเงินเดือน</div>
+  </div>
+  <script src="../marks.js"></script>
+</body></html>
