@@ -85,12 +85,23 @@ The 28-year-old man in the faded olive work shirt with a white towel around his 
 **(VO) บุญ:** ผมชื่อบุญ อาชีพรับซื้อของเก่า… ในบ้านนี้ ผมมีค่าน้อยกว่าเศษเหล็ก
 **ตัดใช้:** 7 วินาที
 
-### คลิป 4 · 0:19–0:25 · ฝนจับมือบุญ
-**Ingredients:** R3 (ฝน), R1 (บุญ), R4 (แม่ยาย)
+### คลิป 4 · 0:19–0:25 · ฝนอยู่ข้างบุญ
+**Ingredients:** R4 (แม่ยาย), R3 (ฝน), R1 (บุญ)
 ```
-All characters are adults. At a birthday banquet table, the plump 58-year-old mother-in-law in the red silk blouse and gold necklaces turns to her adult daughter Fon, a 27-year-old married woman with bangs in a cream blouse, and speaks to her scornfully while fanning herself. Fon lowers her eyes and stays silent. Next to Fon sits her husband Boon, a 28-year-old man in an olive work shirt with a white towel around his neck. On top of the table, Fon quietly places her hand over her husband's hand and gives it a small supportive squeeze; he looks at her gratefully. Medium shot, then close-up on the two hands resting on the tabletop. Sound: quiet room tone. The mother says in Thai: "ฝน… แกน่าจะแต่งกับคนแบบเคน". 2D vector game art style animation, chibi proportions, bold clean dark-brown outlines, cel-shaded coloring with two-tone hard shadows, warm muted earthy color palette, minimalist cute faces with dot eyes, simple flat vector background, smooth 2D animation, vertical 9:16. No on-screen text, no subtitles.
+All characters are adults. At a birthday banquet table, the plump 58-year-old mother-in-law in a red silk blouse waves her folding fan and talks with a disapproving face. Across the table, a 27-year-old woman with bangs in a cream blouse sits next to a 28-year-old man in an olive work shirt with a white towel around his neck. She turns to him and gives him a small warm smile and a reassuring nod; he smiles back softly. No physical contact. Medium shot, slow push-in. Sound: quiet room tone. The older woman says in Thai: "ฝน… แกน่าจะแต่งกับคนแบบเคน". 2D vector game art style animation, chibi proportions, bold clean dark-brown outlines, cel-shaded coloring with two-tone hard shadows, warm muted earthy color palette, minimalist cute faces with dot eyes, simple flat vector background, smooth 2D animation, vertical 9:16. No on-screen text, no subtitles.
 ```
-**(VO) บุญ:** มีแค่ฝนคนเดียว ที่ยังจับมือผมไว้
+**ถ้ายังไม่ผ่าน:** แยกเป็นสองคลิปสั้น แล้วผมจะต่อให้เอง
+
+**4a · แม่ยายพูด** (Ingredients: R4)
+```
+All characters are adults. A plump 58-year-old Thai woman in a red silk blouse with gold necklaces sits at a birthday banquet table, waving her folding fan with a disapproving face, speaking. Medium close-up. Sound: quiet room tone. She says in Thai: "ฝน… แกน่าจะแต่งกับคนแบบเคน". 2D vector game art style animation, chibi proportions, bold clean dark-brown outlines, cel-shaded coloring with two-tone hard shadows, warm muted earthy color palette, minimalist cute faces with dot eyes, simple flat vector background, smooth 2D animation, vertical 9:16. No on-screen text, no subtitles.
+```
+
+**4b · ฝนยิ้มให้บุญ** (Ingredients: R3, R1)
+```
+All characters are adults. A 27-year-old woman with bangs in a cream blouse sits at a dinner table beside a 28-year-old man in an olive work shirt with a white towel around his neck. She turns to him with a small warm smile and a reassuring nod; he smiles back. No physical contact. Medium shot. Sound: quiet room tone, no dialogue. 2D vector game art style animation, chibi proportions, bold clean dark-brown outlines, cel-shaded coloring with two-tone hard shadows, warm muted earthy color palette, minimalist cute faces with dot eyes, simple flat vector background, smooth 2D animation, vertical 9:16. No on-screen text, no subtitles.
+```
+**(VO) บุญ:** มีแค่ฝนคนเดียว ที่ยังอยู่ข้างผม
 **ตัดใช้:** 6 วินาที
 
 ### คลิป 5 · 0:25–0:31 · บ้านคนตาย (ชื่อเรื่องขึ้น)
