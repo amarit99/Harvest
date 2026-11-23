@@ -7,9 +7,11 @@
 ## สไตล์ (ใส่ท้ายทุก prompt)
 
 ```
-cinematic film still, vertical 9:16, photorealistic, claustrophobic underground bunker,
-pale green emergency lighting, deep shadows, soft 35mm film grain, shallow depth of field
+stylized 2.5D, 3D animated movie character render, soft volumetric lighting, subsurface skin,
+stylized proportions, claustrophobic underground bunker, pale green emergency lighting,
+deep shadows, cinematic depth of field
 ```
+**สไตล์ของซีรีส์:** การ์ตูน 2.5D กึ่งสามมิติ แบบภาพยนตร์แอนิเมชัน ไม่ใช่ภาพเหมือนจริง
 ถ้าเป็นช็อตที่เห็นข้างนอก ให้เปลี่ยนแสงเป็น `blood-red orange hazy sky, thick red dust in the air`
 
 ## นวล
