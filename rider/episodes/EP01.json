@@ -1,0 +1,114 @@
+{
+  "title": "ไรเดอร์พันล้าน ตอนที่ 1 — ไรเดอร์ที่ถูกทิ้ง",
+  "next": "ตอนต่อไป — ห้องประชุม",
+  "scenes": [
+    {"bg": "restaurant", "table": true, "mood": "tense", "cam": "zin",
+     "actors": [{"id": "tae", "x": 190, "expr": "s", "item": "bag"}, {"id": "mint", "x": 540, "expr": "a"}, {"id": "boss", "x": 880, "expr": "m"}],
+     "lines": [{"who": "vo", "text": "คืนนั้น… ผมส่งอาหารให้แฟนตัวเอง"},
+               {"who": "mint", "text": "เต้… เราเลิกกันเถอะ"},
+               {"who": "boss", "text": "ทิปครับ… ก้มเก็บเอาเองนะ", "pose": {"boss": "throw"}}],
+     "fx": ["coins"], "coinsLine": 2, "sfx": [{"name": "coin", "line": 2, "off": 0.6}]},
+
+    {"card": "วันรุ่งขึ้น", "mood": "none", "lines": [{"who": "vo", "text": "วันรุ่งขึ้น"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "boardroom", "table": true, "mood": "triumph", "fx": ["flash"],
+     "actors": [{"id": "boss", "x": 300, "expr": "x", "pose": "kneel"}, {"id": "tae_ceo", "x": 760, "expr": "n", "pose": "hips"}],
+     "pops": [{"text": "ประธานบริษัท", "at": 0.6, "y": 360, "size": 110}],
+     "lines": [{"who": "vo", "text": "ผู้ชายคนเดียวกัน… คุกเข่าขอโทษผม กลางห้องประชุม"},
+               {"who": "boss", "text": "ท่านประธานครับ… ผมไม่รู้จริง ๆ ครับ", "expr": {"boss": "c"}}]},
+
+    {"bg": "boardroom", "mood": "triumph", "cam": "zin",
+     "actors": [{"id": "tae_ceo", "x": 540, "s": 1.7, "expr": "m"}],
+     "pops": [{"text": "฿500 ล้าน", "at": 1.2, "y": 380, "color": "#ffd23f"}],
+     "lines": [{"who": "vo", "text": "เพราะเงินห้าร้อยล้านของบริษัทเขา… ขึ้นอยู่กับลายเซ็นผมคนเดียว"}]},
+
+    {"card": "เช้าวันนั้น", "mood": "none", "lines": [{"who": "vo", "text": "ย้อนไปเช้าวันนั้น"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "street", "mood": "light", "tag": "เต้", "actors": [{"id": "bike", "x": 500, "s": 1.25}, {"id": "tae", "x": 540, "expr": "h", "pose": "wave"}],
+     "pops": [{"text": "วันละ 30 รอบ", "at": 2.2, "y": 380}],
+     "lines": [{"who": "vo", "text": "ผมชื่อเต้ อายุยี่สิบเก้า… อาชีพไรเดอร์ส่งอาหาร"},
+               {"who": "vo", "text": "ค่ารอบละยี่สิบเอ็ดบาท วันไหนฝนตก… ได้ทิปเพิ่มนิดหน่อย"}]},
+
+    {"bg": "hub", "mood": "light", "tag": "ลุงชัย",
+     "actors": [{"id": "chai", "x": 330, "expr": "h", "pose": "hold"}, {"id": "tae", "x": 740, "expr": "h"}],
+     "lines": [{"who": "chai", "text": "เต้! ร้อนขนาดนี้ กินน้ำก่อนไอ้หนุ่ม"},
+               {"who": "tae", "text": "ขอบคุณครับลุง"},
+               {"who": "vo", "text": "ลุงชัยอายุหกสิบสอง… ยังต้องวิ่งงานเลี้ยงหลานสองคน"}]},
+
+    {"bg": "hub", "mood": "light", "cam": "zin",
+     "actors": [{"id": "chai", "x": 330, "expr": "s", "pose": "shrug"}, {"id": "tae", "x": 740, "expr": "n"}],
+     "lines": [{"who": "chai", "text": "แอปหักค่าคอมเพิ่มอีกแล้ว… ไม่รู้คนเป็นเจ้าของคิดอะไรอยู่"},
+               {"who": "vo", "text": "ผมเงียบ… เพราะผมรู้คำตอบดีกว่าใคร", "expr": {"tae": "s"}}]},
+
+    {"bg": "room", "mood": "light", "fx": ["sparkle"],
+     "actors": [{"id": "tae", "x": 540, "s": 1.45, "expr": "h", "item": "ring"}],
+     "pops": [{"text": "ครบรอบ 5 ปี", "at": 1.5, "y": 380}],
+     "lines": [{"who": "vo", "text": "ผมเก็บเงินซื้อแหวนวงนี้… ตั้งใจจะขอมิ้นแต่งงาน คืนครบรอบห้าปี"}]},
+
+    {"bg": "room", "mood": "light",
+     "actors": [{"id": "tae", "x": 540, "s": 1.45, "expr": "n", "pose": "phone"}],
+     "lines": [{"who": "mint", "text": "เต้ คืนนี้ไม่ต้องมารับนะ ฉันติดงาน"},
+               {"who": "tae", "text": "อืม… ทำงานอย่าดึกนะ"},
+               {"who": "vo", "text": "สามคืนแล้ว… ที่มิ้นบอกว่าติดงาน", "expr": {"tae": "s"}}]},
+
+    {"bg": "street", "mood": "tense", "phone": {"title": "ออร์เดอร์ใหม่!", "body": ["ร้าน เลอ โกลด์", "โต๊ะ 7", "สเต๊กวากิว x2"]},
+     "actors": [], "sfx": [{"name": "ding", "at": 0.2}],
+     "lines": [{"who": "vo", "text": "แล้วออร์เดอร์นั้น… ก็เด้งขึ้นมา"}]},
+
+    {"bg": "restaurant", "table": true, "mood": "tense", "tag": "บอส",
+     "actors": [{"id": "mint", "x": 380, "expr": "h"}, {"id": "boss", "x": 720, "expr": "h"}],
+     "lines": [{"who": "boss", "text": "ที่รัก… วากิวจานนี้ ราคาเท่าเงินเดือนไรเดอร์ทั้งเดือนเลยนะ"},
+               {"who": "mint", "text": "บอสอะ… พูดอะไรก็ไม่รู้"},
+               {"who": "vo", "text": "ผมเห็นมิ้น… หัวเราะกับผู้ชายที่ผมไม่เคยเห็นหน้า"}]},
+
+    {"bg": "restaurant", "table": true, "mood": "tense", "fx": ["shake"],
+     "actors": [{"id": "tae", "x": 190, "expr": "s", "item": "bag", "enter": "left"}, {"id": "mint", "x": 540, "expr": "x"}, {"id": "boss", "x": 880, "expr": "m"}],
+     "lines": [{"who": "mint", "text": "เต้…?!"},
+               {"who": "boss", "text": "อ้าว ไรเดอร์ วางตรงนั้นแหละ", "pose": {"boss": "point"}}]},
+
+    {"bg": "restaurant", "table": true, "mood": "sad", "cam": "zin",
+     "actors": [{"id": "tae", "x": 190, "expr": "s", "item": "bag"}, {"id": "mint", "x": 540, "expr": "a", "pose": "hips"}, {"id": "boss", "x": 880, "expr": "m"}],
+     "lines": [{"who": "mint", "text": "ไหน ๆ ก็เจอแล้ว… เราเลิกกันเถอะ"},
+               {"who": "mint", "text": "ห้าปีที่คบกับเธอ… ฉันไม่เคยได้อะไรเลย"}]},
+
+    {"bg": "restaurant", "table": true, "mood": "tense",
+     "actors": [{"id": "tae", "x": 190, "expr": "s", "item": "bag"}, {"id": "mint", "x": 540, "expr": "m"}, {"id": "boss", "x": 880, "expr": "m", "pose": "point"}],
+     "pops": [{"text": "ผอ.ฝ่ายขาย", "at": 0.8, "y": 380}],
+     "lines": [{"who": "boss", "text": "ผมเป็นผู้อำนวยการฝ่ายขาย บริษัทดาวทอง… ส่วนคุณ ส่งข้าว"},
+               {"who": "boss", "text": "ทิปครับ… ก้มเก็บเอาเองนะ", "pose": {"boss": "throw"}}],
+     "fx": ["coins"], "coinsLine": 1, "sfx": [{"name": "coin", "line": 1, "off": 0.6}]},
+
+    {"bg": "restaurant", "table": true, "mood": "sad",
+     "actors": [{"id": "tae", "x": 430, "expr": "s", "pose": "kneel"}],
+     "lines": [{"who": "vo", "text": "ผมก้มลงเก็บเหรียญ… ไม่ใช่เพราะอยากได้เงิน"},
+               {"who": "vo", "text": "แต่เพราะถ้าผมไม่เก็บ… พนักงานร้านต้องมาก้มเก็บแทนผม"}]},
+
+    {"bg": "rain", "mood": "sad", "sfx": [{"name": "rain", "at": 0}],
+     "actors": [{"id": "bike", "x": 640, "s": 1.1}, {"id": "tae", "x": 420, "expr": "c"}],
+     "lines": [{"who": "vo", "text": "คืนนั้นฝนตกหนัก… ผมนั่งอยู่บนมอเตอร์ไซค์ นานมาก"}]},
+
+    {"bg": "rain", "mood": "tense", "tag": "นิดา · เลขาฯ", "sfx": [{"name": "ring", "at": 0}],
+     "actors": [{"id": "tae", "x": 540, "s": 1.45, "expr": "s", "pose": "phone"}],
+     "lines": [{"who": "nida", "text": "ท่านประธานคะ ขอโทษที่โทรมาดึกค่ะ"},
+               {"who": "nida", "text": "พรุ่งนี้สิบโมง บริษัทดาวทองจะเข้ามาเสนองานค่ะ", "expr": {"tae": "x"}}]},
+
+    {"bg": "hub", "mood": "triumph", "fx": ["flash", "sparkle"], "cam": "zin", "actors": [],
+     "pops": [{"text": "แอปส่งอาหารอันดับ 1", "at": 0.4, "y": 620, "size": 90}, {"text": "มูลค่า ฿3,000 ล้าน", "at": 2.6, "y": 820, "size": 110, "color": "#ff5a5a"}],
+     "lines": [{"who": "vo", "text": "ไม่มีใครรู้… ว่าแอปที่ผมขี่ส่งอาหารอยู่ทุกวัน"},
+               {"who": "vo", "text": "ผมเป็นคนสร้างมันขึ้นมาเอง"}]},
+
+    {"bg": "rain", "mood": "sad",
+     "actors": [{"id": "bike", "x": 640, "s": 1.1}, {"id": "tae", "x": 420, "expr": "n"}],
+     "lines": [{"who": "vo", "text": "ผมลงมาวิ่งเป็นไรเดอร์สามเดือน… เพราะอยากรู้ว่าคนของผมเหนื่อยแค่ไหน"},
+               {"who": "vo", "text": "และคืนนี้… ผมได้รู้หลายเรื่องเกินไป"}]},
+
+    {"bg": "rain", "mood": "tense",
+     "actors": [{"id": "tae", "x": 540, "s": 1.45, "expr": "n", "pose": "phone"}],
+     "lines": [{"who": "tae", "text": "คุณนิดา… ใครเป็นคนนำเสนอ"},
+               {"who": "nida", "text": "ผู้อำนวยการฝ่ายขาย… คุณบอสค่ะ"}]},
+
+    {"bg": "rain", "mood": "tense", "cam": "zin", "vignette": true,
+     "actors": [{"id": "tae", "x": 540, "s": 1.9, "expr": "m"}],
+     "lines": [{"who": "tae", "text": "พรุ่งนี้… ผมเข้าประชุมเอง"}], "minDur": 4.2}
+  ]
+}
