@@ -104,6 +104,26 @@ const BG = {
     rr(80, GROUND - 230, 640, 120, 20); fillStroke('#ffffff'); rr(80, GROUND - 120, 640, 40, 10); fillStroke('#9fb7c4');
     rr(100, GROUND - 290, 170, 70, 30); fillStroke('#f4f4f4');
   },
+  stall(t) {
+    BG.street(0);
+    g.fillStyle = 'rgba(255,200,120,.18)'; g.fillRect(0, 0, W, GROUND);
+    rr(560, GROUND - 330, 420, 300, 14); fillStroke('#b98d5f');
+    for (let r = 0; r < 3; r++) for (let c = 0; c < 4; c++) { rr(585 + c * 98, GROUND - 310 + r * 90, 84, 70, 6); fillStroke(['#f7e9b0', '#d9f0c9', '#f9d2d2', '#cfe3fa'][(r + c) % 4], 4); }
+    rr(540, GROUND - 400, 460, 70, 10); fillStroke('#e2453c'); g.fillStyle = '#fff'; g.font = '800 46px Kanit'; g.textAlign = 'center'; g.fillText('ลอตเตอรี่', 770, GROUND - 350);
+  },
+  office() {
+    g.fillStyle = '#f1ead8'; g.fillRect(0, 0, W, GROUND);
+    rr(160, 200, 760, 140, 20); fillStroke('#c0392b'); g.fillStyle = '#fff'; g.font = '800 70px Kanit'; g.textAlign = 'center'; g.fillText('จุดขึ้นเงินรางวัล', 540, 295);
+    for (let i = 0; i < 3; i++) { rr(90 + i * 320, 480, 260, 300, 12); fillStroke('#dfe8ef'); }
+    g.fillStyle = '#9c8c74'; g.fillRect(0, GROUND, W, H); rr(-20, GROUND - 260, 1120, 80, 10); fillStroke('#c9a77c');
+  },
+  alley(t) {
+    let gr = g.createLinearGradient(0, 0, 0, GROUND); gr.addColorStop(0, '#f2a65a'); gr.addColorStop(1, '#f7d79b'); g.fillStyle = gr; g.fillRect(0, 0, W, GROUND);
+    rr(-20, 300, 380, GROUND - 260, 6); fillStroke('#b07a57'); rr(720, 380, 380, GROUND - 340, 6); fillStroke('#9c6b4f');
+    for (let i = 0; i < 4; i++) { rr(40 + (i % 2) * 150, 380 + Math.floor(i / 2) * 260, 100, 140, 6); fillStroke('#f4dcae', 4); rr(770 + (i % 2) * 150, 460 + Math.floor(i / 2) * 260, 100, 140, 6); fillStroke('#f4dcae', 4); }
+    g.strokeStyle = OL; g.lineWidth = 5; g.beginPath(); g.moveTo(0, 260); g.quadraticCurveTo(540, 360, 1080, 240); g.stroke();
+    g.fillStyle = '#7d6a58'; g.fillRect(0, GROUND, W, H);
+  },
   boardroom() {
     let gr = g.createLinearGradient(0, 0, 0, GROUND); gr.addColorStop(0, '#d7e3ee'); gr.addColorStop(1, '#eef3f7');
     g.fillStyle = gr; g.fillRect(0, 0, W, GROUND);
@@ -139,6 +159,7 @@ function drawPerson(a, t, talking) {
   rr(-78, -330, 156, 215, 40); fillStroke(c.shirt);
   if (c.tie) { g.beginPath(); g.moveTo(0, -310); g.lineTo(-14, -230); g.lineTo(0, -190); g.lineTo(14, -230); g.closePath(); fillStroke(c.tie, 4); }
   if (c.patch) { rr(-40, -270, 80, 40, 8); fillStroke('#ffffff', 4); g.fillStyle = '#23b26d'; g.font = '800 26px Kanit'; g.textAlign = 'center'; g.fillText(c.patch, 0, -240); }
+  if (c.vest) { rr(-78, -330, 156, 215, 40); fillStroke(c.vest); g.fillStyle = '#e9ff5a'; g.fillRect(-78, -230, 156, 16); g.fillRect(-78, -190, 156, 16); }
   if (c.dress) { g.beginPath(); g.moveTo(-78, -170); g.lineTo(-110, -60); g.lineTo(110, -60); g.lineTo(78, -170); g.closePath(); fillStroke(c.shirt); }
   // arms
   const P = a.pose || 'down';
@@ -160,6 +181,8 @@ function drawPerson(a, t, talking) {
   if (a.item === 'ring') { rr(-40, -260, 80, 60, 10); fillStroke('#c0392b'); circ(0, -275, 20); g.lineWidth = 8; g.strokeStyle = '#ffd23f'; g.stroke(); }
   if (a.item === 'box') { rr(-110, -300, 220, 150, 8); fillStroke('#c69c6d'); g.strokeStyle = OL; g.lineWidth = 5; g.beginPath(); g.moveTo(-110, -260); g.lineTo(110, -260); g.stroke(); }
   if (a.item === 'lunch') { rr(-70, -270, 140, 80, 12); fillStroke('#f2a541'); g.fillStyle = '#fff'; g.fillRect(-70, -248, 140, 12); }
+  if (a.item === 'ticket') { g.save(); g.translate(rh[0], rh[1] - 40); g.rotate(-.2); rr(-34, -24, 68, 48, 4); fillStroke('#fdf6d8', 4); g.fillStyle = '#c0392b'; g.fillRect(-26, -16, 52, 8); g.restore(); }
+  if (a.item === 'cane') { g.strokeStyle = '#6b4a2b'; g.lineWidth = 12; g.beginPath(); g.moveTo(rh[0], rh[1]); g.lineTo(rh[0] + 10, 0); g.stroke(); }
   if (a.item === 'handbag') { rr(lh[0] - 30, lh[1], 60, 50, 10); fillStroke('#f2c14e'); }
   if (c.watch) { rr(lh[0] - 14, lh[1] - 34, 28, 16, 4); fillStroke('#ffd23f', 3); }
   // head
@@ -168,6 +191,8 @@ function drawPerson(a, t, talking) {
   drawHair(c, hy, R0);
   drawFace(c, a.expr || 'n', hy, talking, t);
   if (c.mustache) { g.fillStyle = OL; g.beginPath(); g.ellipse(-22, hy + 40, 24, 9, -.2, 0, 7); g.ellipse(22, hy + 40, 24, 9, .2, 0, 7); g.fill(); }
+  if (c.visor) { g.beginPath(); g.ellipse(0, hy - 70, 112, 26, 0, Math.PI, Math.PI * 2); fillStroke(c.visor); rr(-20, hy - 76, 150, 22, 10); fillStroke(c.visor, 5); }
+  if (c.sunglasses) { g.fillStyle = '#111'; rr(-62, hy - 6, 50, 30, 10); g.fill(); rr(12, hy - 6, 50, 30, 10); g.fill(); g.fillRect(-14, hy + 2, 28, 6); }
   if (c.helmet) { g.beginPath(); g.arc(0, hy - 10, 108, Math.PI * 1.05, Math.PI * 1.95); g.closePath(); fillStroke('#23b26d'); }
   g.restore();
 }

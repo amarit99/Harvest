@@ -1,0 +1,96 @@
+{
+ "pen": {
+  "name": "ป้าเพ็ญ",
+  "skin": "#e2b48a",
+  "hair": "#a9a9a9",
+  "hairStyle": "bun",
+  "shirt": "#3f8fcf",
+  "pants": "#5b4a3a",
+  "visor": "#f2c14e",
+  "sub": "#ffe08a",
+  "voice": "ThT5KcBeYPX3keUQqHPh"
+ },
+ "som": {
+  "name": "ลุงสม",
+  "skin": "#b98258",
+  "hair": "#d0d0d0",
+  "hairStyle": "gray",
+  "shirt": "#7a7a7a",
+  "pants": "#3c3c3c",
+  "vest": "#f28a2e",
+  "sub": "#ffc58a",
+  "voice": "pNInz6obpgDQGcFmaJgB"
+ },
+ "ek": {
+  "name": "เอก",
+  "skin": "#d9a77c",
+  "hair": "#2a2320",
+  "hairStyle": "short",
+  "shirt": "#c94f4f",
+  "pants": "#2f3a4a",
+  "sub": "#9fd3ff",
+  "voice": "bIHbv24MWmeRgasZH58o"
+ },
+ "jit": {
+  "name": "ป้าจิต",
+  "skin": "#f5d3b5",
+  "hair": "#4a2a1a",
+  "hairStyle": "bun",
+  "shirt": "#b3263a",
+  "pants": "#b3263a",
+  "dress": true,
+  "watch": true,
+  "sunglasses": true,
+  "sub": "#ff9fc6",
+  "voice": "pFZP5JQG7iQjIQuC4Bku"
+ },
+ "ton": {
+  "name": "ต้นข้าว",
+  "skin": "#f0c49c",
+  "hair": "#2a2320",
+  "hairStyle": "short",
+  "shirt": "#ffffff",
+  "pants": "#2b4c8c",
+  "sub": "#b8f5c8",
+  "voice": "jBpfuIE2acCO8z3wKNLl"
+ },
+ "shark": {
+  "name": "เจ้าหนี้",
+  "skin": "#c98f5e",
+  "hair": "#151515",
+  "hairStyle": "slick",
+  "shirt": "#1f1f1f",
+  "pants": "#1f1f1f",
+  "sunglasses": true,
+  "watch": true,
+  "sub": "#ff8a8a",
+  "voice": "VR6AewLTigWG4xSOukaG"
+ },
+ "nurse": {
+  "name": "พยาบาล",
+  "skin": "#f7d2b6",
+  "hair": "#2a2320",
+  "hairStyle": "bun",
+  "shirt": "#ffffff",
+  "pants": "#ffffff",
+  "dress": true,
+  "sub": "#cfe3fa",
+  "voice": "XB0fDUnXU5powFXDhCwa"
+ },
+ "vo": {
+  "name": "",
+  "sub": "#ffffff",
+  "voice": "ThT5KcBeYPX3keUQqHPh"
+ },
+ "friend": {
+  "name": "เพื่อนคนเก็บขยะ",
+  "skin": "#a8744f",
+  "hair": "#2a2320",
+  "hairStyle": "short",
+  "shirt": "#7a7a7a",
+  "pants": "#3c3c3c",
+  "vest": "#f28a2e",
+  "sub": "#ffc58a",
+  "voice": "TX3LPaxmHKxFdv7VOQHJ"
+ }
+}
