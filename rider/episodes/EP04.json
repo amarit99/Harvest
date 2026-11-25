@@ -1,0 +1,80 @@
+{
+  "title": "ไรเดอร์พันล้าน ตอนที่ 4 — ไรเดอร์คนใหม่",
+  "next": "ตอนต่อไป — ค่ารอบใหม่ (ตอนจบ)",
+  "scenes": [
+    {"bg": "rain", "mood": "sad", "sfx": [{"name": "rain", "at": 0}, {"name": "coin", "line": 0, "off": 0.6}],
+     "actors": [{"id": "boss_rider", "x": 300, "expr": "s", "item": "bag"}, {"id": "karen", "x": 780, "expr": "m", "pose": "throw"}],
+     "fx": ["coins"], "coinsLine": 0,
+     "lines": [{"who": "karen", "text": "ทิปค่ะ… ก้มเก็บเอาเองนะ"},
+               {"who": "vo", "text": "ประโยคเดียวกัน… แต่คราวนี้ คนก้มเก็บคือบอส"}]},
+
+    {"card": "สองสัปดาห์ก่อน", "mood": "none", "lines": [{"who": "vo", "text": "ย้อนไปสองสัปดาห์ก่อน"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "hub", "mood": "tense",
+     "actors": [{"id": "tae", "x": 260, "expr": "n"}, {"id": "boss_rider", "x": 760, "expr": "x"}],
+     "lines": [{"who": "boss", "text": "ท่านประธาน… ทำไมยังใส่ชุดไรเดอร์"},
+               {"who": "tae", "text": "ที่นี่ผมชื่อเต้ครับ ไรเดอร์เหมือนคุณ"},
+               {"who": "tae", "text": "และไม่มีใครที่นี่รู้ว่าผมเป็นใคร… คุณช่วยเก็บไว้ด้วยนะครับ"}]},
+
+    {"bg": "hub", "mood": "light", "tag": "ลุงชัย",
+     "actors": [{"id": "chai", "x": 260, "expr": "h"}, {"id": "tae", "x": 560, "expr": "h"}, {"id": "boss_rider", "x": 860, "expr": "s"}],
+     "lines": [{"who": "vo", "text": "ลุงชัยหายป่วยแล้ว… และกลับมาวิ่งงานเหมือนเดิม"},
+               {"who": "tae", "text": "ลุงครับ ช่วยสอนงานไรเดอร์ใหม่คนนี้หน่อยนะ"},
+               {"who": "chai", "text": "ได้เลยไอ้หนุ่ม… ตามลุงมา!", "pose": {"chai": "wave"}}]},
+
+    {"bg": "street", "mood": "light", "cam": "zin",
+     "actors": [{"id": "bike", "x": 500, "s": 1.25}, {"id": "boss_rider", "x": 540, "expr": "c"}],
+     "pops": [{"text": "12 รอบ", "at": 0.8, "y": 380}, {"text": "รายได้ ฿252", "at": 3.4, "y": 540, "color": "#ff5a5a"}],
+     "lines": [{"who": "vo", "text": "วันแรก… บอสวิ่งได้สิบสองรอบ หลงทางสามครั้ง"},
+               {"who": "boss", "text": "สองร้อยห้าสิบสองบาท… ทั้งวันได้แค่นี้เองเหรอ"}]},
+
+    {"bg": "street", "mood": "tense", "phone": {"title": "รีวิวจากลูกค้า", "body": ["⭐ 1 ดาว", "ส่งช้ามาก", "หน้าตาก็ไม่รับแขก"], "color": "#d64545"},
+     "actors": [], "sfx": [{"name": "ding", "at": 0.2}],
+     "lines": [{"who": "vo", "text": "แล้วรีวิวหนึ่งดาว ก็เด้งเข้ามาไม่หยุด"}]},
+
+    {"bg": "hub", "mood": "sad",
+     "actors": [{"id": "boss_rider", "x": 300, "expr": "c", "pose": "kneel"}, {"id": "chai", "x": 760, "expr": "h", "item": "lunch"}],
+     "lines": [{"who": "chai", "text": "กินก่อนไอ้หนุ่ม… ข้าวกล่องลุงแบ่งให้ครึ่งนึง"},
+               {"who": "boss", "text": "ลุง… ทำไมใจดีกับผมขนาดนี้"},
+               {"who": "chai", "text": "เพราะไรเดอร์ด้วยกัน… ไม่ทิ้งกัน"}]},
+
+    {"bg": "hub", "mood": "sad", "cam": "zin",
+     "actors": [{"id": "tae", "x": 540, "s": 1.5, "expr": "s"}],
+     "lines": [{"who": "vo", "text": "ผมยืนดูอยู่ไกล ๆ"},
+               {"who": "vo", "text": "คนที่เคยโยนเหรียญใส่ผม… กำลังร้องไห้ เพราะข้าวกล่องครึ่งเดียว"}]},
+
+    {"card": "สองสัปดาห์ต่อมา", "mood": "none", "lines": [{"who": "vo", "text": "สองสัปดาห์ต่อมา"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "rain", "mood": "sad", "sfx": [{"name": "rain", "at": 0}, {"name": "coin", "line": 0, "off": 0.6}],
+     "actors": [{"id": "boss_rider", "x": 300, "expr": "s", "item": "bag"}, {"id": "karen", "x": 780, "expr": "m", "pose": "throw"}],
+     "fx": ["coins"], "coinsLine": 0, "tag": "ลูกค้า",
+     "lines": [{"who": "karen", "text": "ทิปค่ะ… ก้มเก็บเอาเองนะ"},
+               {"who": "karen", "text": "ไรเดอร์สมัยนี้ ส่งช้าแล้วยังทำหน้าบึ้งอีก"}]},
+
+    {"bg": "rain", "mood": "sad",
+     "actors": [{"id": "boss_rider", "x": 540, "s": 1.4, "expr": "c", "pose": "kneel"}],
+     "lines": [{"who": "vo", "text": "บอสก้มลงเก็บเหรียญกลางสายฝน"},
+               {"who": "boss", "text": "ยี่สิบบาท… ทำไมมันหนักขนาดนี้"}]},
+
+    {"bg": "rain", "mood": "sad",
+     "actors": [{"id": "tae", "x": 260, "expr": "s"}, {"id": "boss_rider", "x": 760, "expr": "c"}],
+     "lines": [{"who": "boss", "text": "เต้… ผมขอโทษ"},
+               {"who": "boss", "text": "ผมเพิ่งรู้ว่าทิปยี่สิบบาทที่ผมโยนใส่คุณ… มันหนักแค่ไหน"},
+               {"who": "tae", "text": "ผมรู้ครับ… เพราะผมก็เคยก้มเก็บมันเหมือนกัน"}]},
+
+    {"bg": "rain", "mood": "tense", "cam": "zin",
+     "actors": [{"id": "tae", "x": 260, "expr": "n"}, {"id": "boss_rider", "x": 760, "expr": "s"}],
+     "pops": [{"text": "หนี้ ฿200,000", "at": 2.4, "y": 380, "color": "#ff5a5a"}],
+     "lines": [{"who": "boss", "text": "อีกเรื่องนึง… มิ้นกู้เงินในชื่อเราสองคน ไปซื้อของแบรนด์เนม"},
+               {"who": "boss", "text": "ตอนนี้เป็นหนี้สองแสน… และเธอบอกว่า จะไปหาคุณ"}]},
+
+    {"bg": "lobby", "mood": "tense", "tag": "มิ้น",
+     "actors": [{"id": "mint", "x": 540, "s": 1.5, "expr": "c"}],
+     "lines": [{"who": "vo", "text": "เช้าวันรุ่งขึ้น… มิ้นมานั่งรอผมตั้งแต่ตีห้า"},
+               {"who": "mint", "text": "เต้… ฉันไม่เหลือใครแล้ว"}]},
+
+    {"bg": "lobby", "mood": "tense", "cam": "zin", "vignette": true,
+     "actors": [{"id": "tae_ceo", "x": 540, "s": 1.9, "expr": "n"}],
+     "lines": [{"who": "vo", "text": "และวันนั้น… ผมตั้งใจจะบอกความจริงกับทุกคน"}], "minDur": 4.0}
+  ]
+}

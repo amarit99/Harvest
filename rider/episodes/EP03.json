@@ -1,0 +1,90 @@
+{
+  "title": "ไรเดอร์พันล้าน ตอนที่ 3 — แฟนเก่ากลับมา",
+  "next": "ตอนต่อไป — ไรเดอร์คนใหม่",
+  "scenes": [
+    {"bg": "lobby", "mood": "light", "cam": "zin",
+     "actors": [{"id": "mint", "x": 330, "expr": "h", "item": "lunch"}, {"id": "tae", "x": 760, "expr": "n"}],
+     "lines": [{"who": "mint", "text": "เต้… ฉันทำกับข้าวมาให้ เราเริ่มต้นใหม่กันได้ไหม"},
+               {"who": "vo", "text": "รอยยิ้มนั้น… อยู่ได้ไม่ถึงชั่วโมง"}]},
+
+    {"card": "หนึ่งชั่วโมงต่อมา", "mood": "none", "lines": [{"who": "vo", "text": "หนึ่งชั่วโมงต่อมา"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "street", "mood": "tense", "fx": ["shake"],
+     "actors": [{"id": "mint", "x": 540, "s": 1.5, "expr": "a", "pose": "phone"}],
+     "lines": [{"who": "mint", "text": "ไม่ยอมเหรอ… งั้นฉันจะเอาเงินเขาให้ได้ ด้วยวิธีอื่น"}]},
+
+    {"card": "เช้าวันนั้น", "mood": "none", "lines": [{"who": "vo", "text": "ย้อนไปเช้าวันนั้น"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "hub", "mood": "light", "tag": "ลุงชัย",
+     "actors": [{"id": "chai", "x": 330, "expr": "s"}, {"id": "tae", "x": 740, "expr": "n"}],
+     "lines": [{"who": "vo", "text": "สามวันหลังห้องประชุม ผมยังวิ่งงานกับลุงชัยเหมือนเดิม"},
+               {"who": "vo", "text": "ไม่มีไรเดอร์คนไหนรู้… ว่าผมเป็นใคร"},
+               {"who": "chai", "text": "แค่ไอนิดหน่อยน่ะ ไม่เป็นไรหรอก"}]},
+
+    {"bg": "hub", "mood": "tense", "fx": ["shake"],
+     "actors": [{"id": "chai", "x": 330, "expr": "x", "pose": "kneel"}, {"id": "tae", "x": 740, "expr": "x"}],
+     "lines": [{"who": "vo", "text": "แล้วลุงชัยก็ล้มลงต่อหน้าผม"},
+               {"who": "tae", "text": "ลุง! ลุงชัย!"}]},
+
+    {"bg": "hospital", "mood": "sad", "tag": "โรงพยาบาล",
+     "actors": [{"id": "chai", "x": 300, "expr": "s", "pose": "kneel"}, {"id": "tae", "x": 780, "expr": "s"}],
+     "pops": [{"text": "ค่ารักษา ฿85,000", "at": 0.6, "y": 380, "color": "#ff5a5a", "size": 100}],
+     "lines": [{"who": "chai", "text": "แปดหมื่นห้า… ลุงจะเอาเงินที่ไหนมาจ่าย", "expr": {"chai": "c"}},
+               {"who": "chai", "text": "หลานสองคนยังรอข้าวอยู่ที่บ้านเลย"}]},
+
+    {"bg": "hospital", "mood": "sad",
+     "actors": [{"id": "tae", "x": 540, "s": 1.5, "expr": "n", "pose": "phone"}],
+     "lines": [{"who": "tae", "text": "คุณนิดา ช่วยจ่ายค่ารักษาลุงชัยให้ทั้งหมด"},
+               {"who": "tae", "text": "แต่ห้ามบอกว่าเป็นผมนะครับ"},
+               {"who": "nida", "text": "ค่ะ ท่านประธาน"}]},
+
+    {"bg": "lobby", "mood": "light", "tag": "มิ้น",
+     "actors": [{"id": "mint", "x": 330, "expr": "h", "item": "lunch", "enter": "left"}, {"id": "tae", "x": 760, "expr": "x"}],
+     "lines": [{"who": "vo", "text": "บ่ายวันนั้น… มีคนมารอผมที่ล็อบบี้"},
+               {"who": "mint", "text": "เต้… ฉันคิดถึงเธอนะ"},
+               {"who": "tae", "text": "มิ้นมาทำไมครับ", "expr": {"tae": "n"}}]},
+
+    {"bg": "lobby", "mood": "sad", "cam": "zin",
+     "actors": [{"id": "mint", "x": 330, "expr": "c", "item": "lunch"}, {"id": "tae", "x": 760, "expr": "n"}],
+     "lines": [{"who": "mint", "text": "ฉันผิดไปแล้ว… บอสหลอกฉัน"},
+               {"who": "mint", "text": "ห้าปีของเรา… มันไม่มีความหมายเลยเหรอ"}]},
+
+    {"bg": "lobby", "mood": "tense",
+     "actors": [{"id": "mint", "x": 330, "expr": "s", "item": "lunch"}, {"id": "tae", "x": 760, "expr": "n", "pose": "hold"}],
+     "lines": [{"who": "tae", "text": "ผมถามมิ้นข้อเดียว"},
+               {"who": "tae", "text": "ถ้าพรุ่งนี้ผมขายบริษัททิ้ง แล้วกลับไปวิ่งส่งข้าวทั้งชีวิต… มิ้นยังอยากเริ่มใหม่ไหม"}]},
+
+    {"bg": "lobby", "mood": "tense", "cam": "zin",
+     "actors": [{"id": "mint", "x": 540, "s": 1.6, "expr": "x", "item": "lunch"}],
+     "pops": [{"text": "3 วินาที", "at": 0.5, "y": 380}],
+     "lines": [{"who": "mint", "text": "ก… ก็ต้องคุยกันก่อนสิ"},
+               {"who": "vo", "text": "แค่สามวินาทีที่เธอเงียบ… ผมก็ได้คำตอบแล้ว"}]},
+
+    {"bg": "lobby", "mood": "sad",
+     "actors": [{"id": "mint", "x": 330, "expr": "s", "item": "lunch"}, {"id": "tae", "x": 760, "expr": "s"}],
+     "lines": [{"who": "tae", "text": "ขอบคุณสำหรับข้าวนะครับ… แต่เราจบกันแล้ว"},
+               {"who": "vo", "text": "ผมไม่ได้โกรธเธอ… ผมแค่ไม่อยากเป็นกระเป๋าเงินของใคร"}]},
+
+    {"bg": "street", "mood": "tense", "fx": ["shake"],
+     "actors": [{"id": "mint", "x": 540, "s": 1.5, "expr": "a", "pose": "phone"}],
+     "lines": [{"who": "mint", "text": "ไม่ยอมเหรอ… งั้นฉันจะเอาเงินเขาให้ได้ ด้วยวิธีอื่น"}]},
+
+    {"bg": "hospital", "mood": "triumph", "phone": {"title": "โรงพยาบาล", "body": ["ค่ารักษา ฿85,000", "สถานะ: ชำระแล้ว ✔", "ผู้ชำระ: ไม่ประสงค์ออกนาม"]},
+     "actors": [], "sfx": [{"name": "ding", "at": 0.2}],
+     "lines": [{"who": "vo", "text": "เย็นวันนั้น ลุงชัยได้รับข้อความจากโรงพยาบาล"}]},
+
+    {"bg": "hospital", "mood": "light", "fx": ["sparkle"],
+     "actors": [{"id": "chai", "x": 540, "s": 1.5, "expr": "c", "pose": "kneel"}],
+     "lines": [{"who": "chai", "text": "ใครจ่ายให้ลุงเนี่ย… ใครกัน"},
+               {"who": "vo", "text": "ลุงชัยไม่รู้ว่าใครจ่าย… และผมไม่อยากให้ลุงรู้"}]},
+
+    {"bg": "hub", "mood": "tense", "tag": "ไรเดอร์คนใหม่",
+     "actors": [{"id": "tae", "x": 260, "expr": "n"}, {"id": "boss_rider", "x": 760, "expr": "s", "enter": "right"}],
+     "lines": [{"who": "vo", "text": "แล้วไรเดอร์คนใหม่ ก็มารายงานตัวที่ศูนย์"},
+               {"who": "boss", "text": "ผม… มาสมัครเป็นไรเดอร์ครับ", "expr": {"tae": "x"}}]},
+
+    {"bg": "hub", "mood": "tense", "cam": "zin", "vignette": true,
+     "actors": [{"id": "boss_rider", "x": 540, "s": 1.9, "expr": "x"}],
+     "lines": [{"who": "boss", "text": "ท่าน… ท่านประธาน?!"}], "minDur": 3.6}
+  ]
+}

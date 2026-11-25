@@ -67,8 +67,8 @@ for sc in ep["scenes"]:
                  {"text": ln["text"], "model_id": "eleven_v3", "language_code": "th", "voice_settings": {"stability": 0.5, "similarity_boost": 0.75}}, f)
         d = dur(f)
         l2 = dict(ln); l2.update(at=round(t, 3), dur=round(d, 3)); lines.append(l2)
-        vo_events.append((f, t0 + t)); t += d + 0.3
-    D = max(t + 0.45, sc.get("minDur", 2.0))
+        vo_events.append((f, t0 + t)); t += d + float(os.environ.get('GAP', '0.3'))
+    D = max(t + float(os.environ.get('TAIL', '0.45')), sc.get("minDur", 2.0))
     s2 = dict(sc); s2.update(start=round(t0, 3), dur=round(D, 3), lines=lines)
     if "coinsLine" in sc and lines:
         s2["coinsAt"] = lines[sc["coinsLine"]]["at"] + 0.4

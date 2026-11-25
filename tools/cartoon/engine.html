@@ -95,6 +95,15 @@ const BG = {
     rr(120, GROUND - 260, 260, 200, 14); fillStroke('#b98d5f');
     g.fillStyle = '#d8d2c8'; g.fillRect(0, GROUND, W, H); g.fillStyle = 'rgba(255,255,255,.35)'; for (let i = 0; i < 6; i++) g.fillRect(i * 200, GROUND + 60, 120, 12);
   },
+  hospital() {
+    g.fillStyle = '#dff1ee'; g.fillRect(0, 0, W, GROUND);
+    rr(80, 220, 380, 300, 10); fillStroke('#a9d6f0');
+    rr(640, 200, 300, 120, 16); fillStroke('#ffffff'); g.fillStyle = '#e0473f'; g.fillRect(770, 222, 40, 76); g.fillRect(752, 240, 76, 40);
+    g.strokeStyle = OL; g.lineWidth = 8; g.beginPath(); g.moveTo(900, 520); g.lineTo(900, GROUND - 40); g.stroke(); rr(860, 520, 80, 110, 14); fillStroke('#cdeffa', 5);
+    g.fillStyle = '#b9d3cf'; g.fillRect(0, GROUND, W, H);
+    rr(80, GROUND - 230, 640, 120, 20); fillStroke('#ffffff'); rr(80, GROUND - 120, 640, 40, 10); fillStroke('#9fb7c4');
+    rr(100, GROUND - 290, 170, 70, 30); fillStroke('#f4f4f4');
+  },
   boardroom() {
     let gr = g.createLinearGradient(0, 0, 0, GROUND); gr.addColorStop(0, '#d7e3ee'); gr.addColorStop(1, '#eef3f7');
     g.fillStyle = gr; g.fillRect(0, 0, W, GROUND);
@@ -150,6 +159,7 @@ function drawPerson(a, t, talking) {
   if (a.item === 'phone' || P === 'phone') { rr(rh[0] - 18, rh[1] - 70, 36, 64, 8); fillStroke('#222', 4); }
   if (a.item === 'ring') { rr(-40, -260, 80, 60, 10); fillStroke('#c0392b'); circ(0, -275, 20); g.lineWidth = 8; g.strokeStyle = '#ffd23f'; g.stroke(); }
   if (a.item === 'box') { rr(-110, -300, 220, 150, 8); fillStroke('#c69c6d'); g.strokeStyle = OL; g.lineWidth = 5; g.beginPath(); g.moveTo(-110, -260); g.lineTo(110, -260); g.stroke(); }
+  if (a.item === 'lunch') { rr(-70, -270, 140, 80, 12); fillStroke('#f2a541'); g.fillStyle = '#fff'; g.fillRect(-70, -248, 140, 12); }
   if (a.item === 'handbag') { rr(lh[0] - 30, lh[1], 60, 50, 10); fillStroke('#f2c14e'); }
   if (c.watch) { rr(lh[0] - 14, lh[1] - 34, 28, 16, 4); fillStroke('#ffd23f', 3); }
   // head
@@ -157,6 +167,7 @@ function drawPerson(a, t, talking) {
   circ(0, hy, R0); fillStroke(c.skin);
   drawHair(c, hy, R0);
   drawFace(c, a.expr || 'n', hy, talking, t);
+  if (c.mustache) { g.fillStyle = OL; g.beginPath(); g.ellipse(-22, hy + 40, 24, 9, -.2, 0, 7); g.ellipse(22, hy + 40, 24, 9, .2, 0, 7); g.fill(); }
   if (c.helmet) { g.beginPath(); g.arc(0, hy - 10, 108, Math.PI * 1.05, Math.PI * 1.95); g.closePath(); fillStroke('#23b26d'); }
   g.restore();
 }

@@ -43,7 +43,8 @@
   "tie": "#b3263a",
   "watch": true,
   "sub": "#8fd0ff",
-  "voice": "ErXwobaYiN019PkySvjV"
+  "voice": "ErXwobaYiN019PkySvjV",
+  "mustache": true
  },
  "chai": {
   "name": "ลุงชัย",
@@ -82,5 +83,64 @@
   "watch": true,
   "sub": "#ffc58a",
   "voice": "VR6AewLTigWG4xSOukaG"
+ },
+ "boss_rider": {
+  "name": "บอส",
+  "skin": "#f0c49c",
+  "hair": "#151515",
+  "hairStyle": "slick",
+  "shirt": "#23b26d",
+  "pants": "#3b4a5a",
+  "tie": null,
+  "watch": false,
+  "sub": "#8fd0ff",
+  "voice": "ErXwobaYiN019PkySvjV",
+  "mustache": true,
+  "patch": "ส่งไว"
+ },
+ "karen": {
+  "name": "ลูกค้า",
+  "skin": "#f5cfae",
+  "hair": "#c58b3a",
+  "hairStyle": "bun",
+  "shirt": "#7d3cc8",
+  "pants": "#2b2b2b",
+  "dress": true,
+  "sub": "#d8b4ff",
+  "voice": "pFZP5JQG7iQjIQuC4Bku"
+ },
+ "rider_a": {
+  "name": "ไรเดอร์",
+  "skin": "#c98f5e",
+  "hair": "#1c1c1c",
+  "hairStyle": "short",
+  "shirt": "#23b26d",
+  "pants": "#3b4a5a",
+  "patch": "ส่งไว",
+  "sub": "#b8f5c8",
+  "voice": "TxGEqnHWrfWFTfGW9XjX"
+ },
+ "rider_b": {
+  "name": "ไรเดอร์",
+  "skin": "#f0c49c",
+  "hair": "#5a3b22",
+  "hairStyle": "long",
+  "shirt": "#23b26d",
+  "pants": "#3b4a5a",
+  "patch": "ส่งไว",
+  "sub": "#b8f5c8",
+  "voice": "TxGEqnHWrfWFTfGW9XjX",
+  "hairBack": true
+ },
+ "rider_c": {
+  "name": "ไรเดอร์",
+  "skin": "#a8744f",
+  "hair": "#2a2320",
+  "hairStyle": "gray",
+  "shirt": "#23b26d",
+  "pants": "#3b4a5a",
+  "patch": "ส่งไว",
+  "sub": "#b8f5c8",
+  "voice": "TxGEqnHWrfWFTfGW9XjX"
  }
 }
