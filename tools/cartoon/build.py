@@ -29,7 +29,7 @@ SFX = {
 
 
 def post(path, body, out):
-    req = urllib.request.Request(EL + path, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "xi-api-key": "proxy-injected"})
+    req = urllib.request.Request(EL + path, data=json.dumps(body).encode(), headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=180) as r, open(out, "wb") as f:
         f.write(r.read())
 
