@@ -88,6 +88,13 @@ const BG = {
     g.strokeStyle = 'rgba(190,210,255,.45)'; g.lineWidth = 3;
     for (let i = 0; i < 140; i++) { const x = (rnd(i) * W + t * 60) % W, y = (rnd(i + 50) * H + t * 1600) % H; g.beginPath(); g.moveTo(x, y); g.lineTo(x - 8, y + 50); g.stroke(); }
   },
+  lobby() {
+    g.fillStyle = '#e9e4dc'; g.fillRect(0, 0, W, GROUND);
+    for (let i = 0; i < 4; i++) { rr(60 + i * 250, 120, 200, 760, 8); fillStroke('#cfd9e2'); g.fillStyle = 'rgba(255,255,255,.5)'; g.fillRect(80 + i * 250, 140, 40, 720); }
+    rr(300, 930, 480, 110, 18); fillStroke('#23b26d'); g.fillStyle = '#fff'; g.font = '800 70px Kanit'; g.textAlign = 'center'; g.fillText('ส่งไว', 540, 1008);
+    rr(120, GROUND - 260, 260, 200, 14); fillStroke('#b98d5f');
+    g.fillStyle = '#d8d2c8'; g.fillRect(0, GROUND, W, H); g.fillStyle = 'rgba(255,255,255,.35)'; for (let i = 0; i < 6; i++) g.fillRect(i * 200, GROUND + 60, 120, 12);
+  },
   boardroom() {
     let gr = g.createLinearGradient(0, 0, 0, GROUND); gr.addColorStop(0, '#d7e3ee'); gr.addColorStop(1, '#eef3f7');
     g.fillStyle = gr; g.fillRect(0, 0, W, GROUND);
@@ -115,6 +122,7 @@ function drawPerson(a, t, talking) {
   const bob = Math.sin(t * 2.2 + a.x) * 4 + (talking ? Math.abs(Math.sin(t * 9)) * 3 : 0);
   g.save(); g.translate(a.x, (a.y || GROUND) - bob); g.scale(s * flip, s);
   if (a.pose === 'kneel') g.translate(0, 110);
+  if (c.hairBack) { rr(-122, -480, 244, 250, 60); fillStroke(c.hair); }
   // legs
   if (a.pose !== 'kneel') for (const lx of [-40, 12]) { rr(lx, -125, 34, 125, 10); fillStroke(c.pants); rr(lx - 8, -14, 50, 22, 10); fillStroke('#2b2b2b', 4); }
   else { rr(-60, -40, 120, 40, 16); fillStroke(c.pants); }
@@ -141,11 +149,11 @@ function drawPerson(a, t, talking) {
   if (a.item === 'bag') { rr(rh[0] - 40, rh[1], 80, 90, 10); fillStroke('#23b26d'); }
   if (a.item === 'phone' || P === 'phone') { rr(rh[0] - 18, rh[1] - 70, 36, 64, 8); fillStroke('#222', 4); }
   if (a.item === 'ring') { rr(-40, -260, 80, 60, 10); fillStroke('#c0392b'); circ(0, -275, 20); g.lineWidth = 8; g.strokeStyle = '#ffd23f'; g.stroke(); }
+  if (a.item === 'box') { rr(-110, -300, 220, 150, 8); fillStroke('#c69c6d'); g.strokeStyle = OL; g.lineWidth = 5; g.beginPath(); g.moveTo(-110, -260); g.lineTo(110, -260); g.stroke(); }
   if (a.item === 'handbag') { rr(lh[0] - 30, lh[1], 60, 50, 10); fillStroke('#f2c14e'); }
   if (c.watch) { rr(lh[0] - 14, lh[1] - 34, 28, 16, 4); fillStroke('#ffd23f', 3); }
   // head
   const hy = -420, R0 = 100;
-  if (c.hairBack) { g.beginPath(); g.ellipse(0, hy + 40, 120, 150, 0, 0, Math.PI * 2); fillStroke(c.hair); }
   circ(0, hy, R0); fillStroke(c.skin);
   drawHair(c, hy, R0);
   drawFace(c, a.expr || 'n', hy, talking, t);
@@ -237,7 +245,7 @@ function frame(T) {
     if (speaking && speaking.expr && speaking.expr[a.id]) a2.expr = speaking.expr[a.id];
     if (speaking && speaking.pose && speaking.pose[a.id]) a2.pose = speaking.pose[a.id];
     if (a.id === 'bike') { drawBike(a2.x, GROUND + 10, a.s || 1, '#23b26d'); continue; }
-    drawPerson(a2, T, speaking && speaking.who === a.id);
+    drawPerson(a2, T, speaking && (speaking.who === a.id || a.id.startsWith(speaking.who + '_')));
   }
   if ((sc.fx || []).includes('coins') && t >= (sc.coinsAt || .5)) coins(t, clamp((t - (sc.coinsAt || .5)) / 1.2, 0, 1));
   if ((sc.fx || []).includes('sparkle')) sparkle(t);

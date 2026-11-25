@@ -1,0 +1,113 @@
+{
+  "title": "ไรเดอร์พันล้าน ตอนที่ 2 — ห้องประชุม",
+  "next": "ตอนต่อไป — แฟนเก่ากลับมา",
+  "scenes": [
+    {"bg": "lobby", "mood": "tense", "cam": "zin",
+     "actors": [{"id": "tae", "x": 260, "expr": "n"}, {"id": "boss", "x": 760, "expr": "a", "pose": "point"}],
+     "lines": [{"who": "boss", "text": "ไรเดอร์เข้าประตูหน้าไม่ได้! ไปประตูหลังโน่น!"},
+               {"who": "vo", "text": "เช้านั้น… ผมโดนไล่ออกจากตึกของตัวเอง"}]},
+
+    {"card": "สามชั่วโมงต่อมา", "mood": "none", "lines": [{"who": "vo", "text": "สามชั่วโมงต่อมา"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "lobby", "mood": "sad", "cam": "zout",
+     "actors": [{"id": "boss", "x": 540, "s": 1.5, "expr": "c", "item": "box"}],
+     "pops": [{"text": "ถูกไล่ออก", "at": 0.8, "y": 380, "color": "#ff5a5a"}],
+     "lines": [{"who": "vo", "text": "ผู้ชายคนเดียวกัน… เดินออกจากตึกนี้ พร้อมกล่องกระดาษหนึ่งใบ"}]},
+
+    {"card": "09:00 น.", "mood": "none", "lines": [{"who": "vo", "text": "ย้อนไปเก้าโมงเช้า"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "street", "mood": "light", "tag": "เต้",
+     "actors": [{"id": "bike", "x": 500, "s": 1.25}, {"id": "tae", "x": 540, "expr": "n"}],
+     "lines": [{"who": "vo", "text": "เช้านั้นผมไม่ได้เปลี่ยนชุด… ผมขี่มอเตอร์ไซค์ไปออฟฟิศเหมือนทุกวัน"},
+               {"who": "vo", "text": "เพราะผมอยากรู้ว่า… คนในตึกของผม มองไรเดอร์ยังไง"}]},
+
+    {"bg": "lobby", "mood": "tense", "tag": "คุณวิชัย · ประธานดาวทอง",
+     "actors": [{"id": "tae", "x": 200, "expr": "n"}, {"id": "boss", "x": 560, "expr": "x"}, {"id": "wichai", "x": 880, "expr": "n"}],
+     "lines": [{"who": "boss", "text": "อ้าว! ไอ้ไรเดอร์เมื่อคืน… ตามมาขอทิปถึงนี่เลยเหรอ", "expr": {"boss": "m"}},
+               {"who": "wichai", "text": "ใครน่ะ บอส"},
+               {"who": "boss", "text": "ไม่มีใครครับท่าน… แค่คนส่งข้าว", "expr": {"boss": "m"}}]},
+
+    {"bg": "lobby", "mood": "tense",
+     "actors": [{"id": "tae", "x": 200, "expr": "n"}, {"id": "boss", "x": 560, "expr": "a", "pose": "point"}, {"id": "wichai", "x": 880, "expr": "n"}],
+     "lines": [{"who": "boss", "text": "ไรเดอร์เข้าประตูหน้าไม่ได้! ไปประตูหลังโน่น!"},
+               {"who": "boss", "text": "รปภ.! เอาคนนี้ออกไปที!"}]},
+
+    {"bg": "lobby", "mood": "tense", "tag": "นิดา · เลขาฯ",
+     "actors": [{"id": "tae", "x": 200, "expr": "n"}, {"id": "nida", "x": 520, "expr": "n", "enter": "right"}, {"id": "boss", "x": 860, "expr": "x"}],
+     "lines": [{"who": "nida", "text": "เชิญทางนี้ค่ะ… ลิฟต์ผู้บริหารพร้อมแล้วค่ะ"},
+               {"who": "vo", "text": "นิดาพาผมขึ้นลิฟต์ผู้บริหาร… บอสยังยืนงงอยู่ตรงนั้น"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "tense",
+     "actors": [{"id": "boss", "x": 330, "expr": "m", "pose": "point"}, {"id": "wichai", "x": 760, "expr": "h"}],
+     "pops": [{"text": "กำไรเพิ่ม 40%", "at": 0.6, "y": 360, "size": 100}, {"text": "ค่ารอบเหลือ ฿15", "at": 3.4, "y": 520, "size": 100, "color": "#ff5a5a"}],
+     "lines": [{"who": "boss", "text": "ข้อเสนอของเราคือ… ลดค่ารอบไรเดอร์ จากยี่สิบเอ็ด เหลือสิบห้าบาท"},
+               {"who": "boss", "text": "พวกไรเดอร์ ให้เท่าไหร่ก็วิ่งอยู่ดีครับ", "expr": {"boss": "m"}}]},
+
+    {"bg": "boardroom", "table": true, "mood": "tense",
+     "actors": [{"id": "boss", "x": 330, "expr": "h"}, {"id": "wichai", "x": 760, "expr": "n"}],
+     "lines": [{"who": "wichai", "text": "ท่านประธานส่งไว มาหรือยังครับ"},
+               {"who": "nida", "text": "ท่านประธานมาแล้วค่ะ"}], "sfx": [{"name": "hit", "line": 1, "off": 1.0}]},
+
+    {"bg": "boardroom", "table": true, "mood": "triumph", "fx": ["flash"],
+     "actors": [{"id": "boss", "x": 260, "expr": "x"}, {"id": "tae_ceo", "x": 760, "expr": "n", "enter": "right"}],
+     "pops": [{"text": "ประธานบริษัท ส่งไว", "at": 0.9, "y": 360, "size": 96}],
+     "lines": [{"who": "vo", "text": "ผมเปลี่ยนเป็นสูทแค่ห้านาที… แต่บอสจำผมไม่ได้อยู่หลายวินาที"},
+               {"who": "boss", "text": "นี่มัน… ไรเดอร์เมื่อคืน?!"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "triumph", "cam": "zin",
+     "actors": [{"id": "boss", "x": 260, "expr": "x"}, {"id": "tae_ceo", "x": 760, "expr": "n"}],
+     "pops": [{"text": "฿20", "at": 1.8, "x": 760, "y": 520}],
+     "lines": [{"who": "tae", "text": "สวัสดีครับคุณบอส… ทิปยี่สิบบาทเมื่อคืน ผมยังเก็บไว้อยู่นะครับ"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "tense",
+     "actors": [{"id": "boss", "x": 260, "expr": "s"}, {"id": "tae_ceo", "x": 760, "expr": "n", "pose": "hold"}],
+     "lines": [{"who": "tae", "text": "ข้อเสนอของคุณ คือลดค่ารอบไรเดอร์เหลือสิบห้าบาท… ใช่ไหมครับ"},
+               {"who": "boss", "text": "ค…ครับ"}]},
+
+    {"bg": "boardroom", "mood": "tense", "cam": "zin",
+     "actors": [{"id": "tae_ceo", "x": 540, "s": 1.6, "expr": "n"}],
+     "pops": [{"text": "30 รอบ × ฿15 = ฿450", "at": 3.0, "y": 380, "size": 90}],
+     "lines": [{"who": "tae", "text": "เมื่อวานผมวิ่งสามสิบรอบ ถ้าเหลือรอบละสิบห้า… ผมจะได้สี่ร้อยห้าสิบบาท"},
+               {"who": "tae", "text": "ไม่พอค่าน้ำมัน… ไม่พอค่าข้าวให้ลูก"}]},
+
+    {"bg": "boardroom", "mood": "triumph", "cam": "zin", "vignette": true,
+     "actors": [{"id": "tae_ceo", "x": 540, "s": 1.75, "expr": "n"}],
+     "lines": [{"who": "tae", "text": "ผมไม่เซ็นครับ"},
+               {"who": "tae", "text": "ไม่ใช่เพราะเรื่องเมื่อคืน… แต่เพราะไรเดอร์ทุกคนของผม ไม่ใช่ตัวเลขในสไลด์"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "sad",
+     "actors": [{"id": "boss", "x": 300, "expr": "c", "pose": "kneel"}, {"id": "tae_ceo", "x": 760, "expr": "s"}],
+     "lines": [{"who": "boss", "text": "ท่านประธานครับ… ผมไม่รู้จริง ๆ ครับ"},
+               {"who": "tae", "text": "ลุกขึ้นเถอะครับ… ผมไม่ได้อยากให้ใครคุกเข่า"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "tense", "fx": ["shake"],
+     "actors": [{"id": "boss", "x": 300, "expr": "x"}, {"id": "wichai", "x": 760, "expr": "a", "pose": "point"}],
+     "pops": [{"text": "ไล่ออก!", "at": 2.6, "y": 380, "color": "#ff5a5a", "size": 150}],
+     "lines": [{"who": "wichai", "text": "บอส! ห้าร้อยล้านของบริษัทหายไป เพราะปากคุณคนเดียว"},
+               {"who": "wichai", "text": "เก็บของออกไป… เดี๋ยวนี้!"}]},
+
+    {"bg": "lobby", "mood": "sad",
+     "actors": [{"id": "boss", "x": 540, "s": 1.5, "expr": "c", "item": "box"}],
+     "lines": [{"who": "vo", "text": "ก่อนเที่ยง… บอสเดินออกจากตึก ทางประตูหลัง"},
+               {"who": "vo", "text": "ประตูเดียวกับที่เขาไล่ผมไปเมื่อเช้า"}]},
+
+    {"bg": "boardroom", "mood": "light",
+     "actors": [{"id": "nida", "x": 320, "expr": "n"}, {"id": "tae_ceo", "x": 760, "expr": "n"}],
+     "lines": [{"who": "nida", "text": "ท่านไม่โกรธเขาเหรอคะ"},
+               {"who": "tae", "text": "โกรธครับ… แต่ถ้าผมตัดสินใจด้วยความโกรธ ผมก็ไม่ต่างจากเขา"},
+               {"who": "tae", "text": "คุณนิดา ช่วยดูตัวเลขค่ารอบให้ผมหน่อย… ผมอยากรู้ว่าเราจ่ายไรเดอร์น้อยไปแค่ไหน", "expr": {"nida": "h"}}]},
+
+    {"bg": "room", "mood": "tense", "phone": {"title": "ข่าวด่วน!", "body": ["เปิดตัวประธานแอปส่งไว", "อายุเพียง 29 ปี", "เคยแฝงตัวเป็นไรเดอร์"], "color": "#d64545"},
+     "actors": [], "sfx": [{"name": "ding", "at": 0.2}],
+     "lines": [{"who": "vo", "text": "บ่ายวันนั้น… ข่าวหนึ่งเด้งขึ้นในมือถือของคนคนหนึ่ง"}]},
+
+    {"bg": "room", "mood": "tense", "tag": "มิ้น",
+     "actors": [{"id": "mint", "x": 540, "s": 1.5, "expr": "x", "pose": "phone"}],
+     "lines": [{"who": "mint", "text": "เต้…?! นี่มันเต้นี่!"},
+               {"who": "mint", "text": "ห้าปี… เขาโกหกฉันมาตลอดเลยเหรอ", "expr": {"mint": "a"}}]},
+
+    {"bg": "room", "mood": "tense", "cam": "zin", "vignette": true,
+     "actors": [{"id": "mint", "x": 540, "s": 1.9, "expr": "m"}],
+     "lines": [{"who": "mint", "text": "ไม่เป็นไร… เดี๋ยวฉันจะเอาเขาคืนมาเอง"}], "minDur": 4.2}
+  ]
+}

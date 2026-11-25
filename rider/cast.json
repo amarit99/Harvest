@@ -1,9 +1,86 @@
 {
-  "tae":   {"name":"เต้","skin":"#f3c9a0","hair":"#2a2320","hairStyle":"short","shirt":"#23b26d","pants":"#3b4a5a","patch":"ส่งไว","sub":"#ffffff","voice":"bIHbv24MWmeRgasZH58o"},
-  "tae_ceo":{"name":"เต้","skin":"#f3c9a0","hair":"#2a2320","hairStyle":"short","shirt":"#26324a","pants":"#26324a","tie":"#23b26d","sub":"#ffffff","voice":"bIHbv24MWmeRgasZH58o"},
-  "mint":  {"name":"มิ้น","skin":"#f7d2b6","hair":"#6b3f2a","hairStyle":"long","hairBack":true,"shirt":"#f28cb1","pants":"#f28cb1","dress":true,"sub":"#ff9fc6","voice":"XrExE9yKIg1WjnnlVkGX"},
-  "boss":  {"name":"บอส","skin":"#f0c49c","hair":"#151515","hairStyle":"slick","shirt":"#8d8f99","pants":"#6d6f79","tie":"#b3263a","watch":true,"sub":"#8fd0ff","voice":"ErXwobaYiN019PkySvjV"},
-  "chai":  {"name":"ลุงชัย","skin":"#d9a77c","hair":"#bfbfbf","hairStyle":"gray","shirt":"#23b26d","pants":"#4a3b2b","patch":"ส่งไว","sub":"#b8f5c8","voice":"pNInz6obpgDQGcFmaJgB"},
-  "nida":  {"name":"นิดา","skin":"#f7d2b6","hair":"#2a2320","hairStyle":"bun","shirt":"#ffffff","pants":"#3a3a46","sub":"#ffe08a","voice":"XB0fDUnXU5powFXDhCwa"},
-  "vo":    {"name":"","sub":"#ffffff","voice":"bIHbv24MWmeRgasZH58o"}
+ "tae": {
+  "name": "เต้",
+  "skin": "#f3c9a0",
+  "hair": "#2a2320",
+  "hairStyle": "short",
+  "shirt": "#23b26d",
+  "pants": "#3b4a5a",
+  "patch": "ส่งไว",
+  "sub": "#ffffff",
+  "voice": "bIHbv24MWmeRgasZH58o"
+ },
+ "tae_ceo": {
+  "name": "เต้",
+  "skin": "#f3c9a0",
+  "hair": "#2a2320",
+  "hairStyle": "short",
+  "shirt": "#26324a",
+  "pants": "#26324a",
+  "tie": "#23b26d",
+  "sub": "#ffffff",
+  "voice": "bIHbv24MWmeRgasZH58o"
+ },
+ "mint": {
+  "name": "มิ้น",
+  "skin": "#f7d2b6",
+  "hair": "#6b3f2a",
+  "hairStyle": "long",
+  "hairBack": true,
+  "shirt": "#f28cb1",
+  "pants": "#f28cb1",
+  "dress": true,
+  "sub": "#ff9fc6",
+  "voice": "XrExE9yKIg1WjnnlVkGX"
+ },
+ "boss": {
+  "name": "บอส",
+  "skin": "#f0c49c",
+  "hair": "#151515",
+  "hairStyle": "slick",
+  "shirt": "#8d8f99",
+  "pants": "#6d6f79",
+  "tie": "#b3263a",
+  "watch": true,
+  "sub": "#8fd0ff",
+  "voice": "ErXwobaYiN019PkySvjV"
+ },
+ "chai": {
+  "name": "ลุงชัย",
+  "skin": "#d9a77c",
+  "hair": "#bfbfbf",
+  "hairStyle": "gray",
+  "shirt": "#23b26d",
+  "pants": "#4a3b2b",
+  "patch": "ส่งไว",
+  "sub": "#b8f5c8",
+  "voice": "pNInz6obpgDQGcFmaJgB"
+ },
+ "nida": {
+  "name": "นิดา",
+  "skin": "#f7d2b6",
+  "hair": "#2a2320",
+  "hairStyle": "bun",
+  "shirt": "#ffffff",
+  "pants": "#3a3a46",
+  "sub": "#ffe08a",
+  "voice": "XB0fDUnXU5powFXDhCwa"
+ },
+ "vo": {
+  "name": "",
+  "sub": "#ffffff",
+  "voice": "bIHbv24MWmeRgasZH58o"
+ },
+ "wichai": {
+  "name": "คุณวิชัย",
+  "skin": "#e8b98f",
+  "hair": "#d9d9d9",
+  "hairStyle": "gray",
+  "shirt": "#3d3d45",
+  "pants": "#2e2e35",
+  "tie": "#d4a017",
+  "watch": true,
+  "sub": "#ffc58a",
+  "voice": "VR6AewLTigWG4xSOukaG"
+ }
 }
