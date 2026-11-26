@@ -1,0 +1,83 @@
+{
+  "title": "แม่บ้านพันล้าน ตอนที่ 2 — ประชุมพนักงาน",
+  "next": "ตอนต่อไป — สามีกลับใจ",
+  "sign": "ดาวเหนือ", "signColor": "#3d5a99",
+  "scenes": [
+    {"bg": "boardroom", "table": true, "mood": "tense", "cam": "zin",
+     "actors": [{"id": "dam", "x": 260, "expr": "c"}, {"id": "krit", "x": 760, "expr": "m", "pose": "point"}],
+     "lines": [{"who": "krit", "text": "เงินในห้างหายไปสองแสน… คนทำความสะอาดคนนี้ เข้าห้องเก็บเงินคนเดียว"},
+               {"who": "vo", "text": "สามีของฉัน… กำลังจะไล่คนที่บริสุทธิ์ที่สุดในห้างออก"}]},
+
+    {"card": "สิบนาทีต่อมา", "mood": "none", "lines": [{"who": "vo", "text": "สิบนาทีต่อมา"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "boardroom", "table": true, "mood": "triumph", "fx": ["flash"],
+     "actors": [{"id": "krit", "x": 260, "expr": "x"}, {"id": "nok_ceo", "x": 760, "expr": "n"}],
+     "pops": [{"text": "พักงาน!", "at": 2.0, "y": 380, "color": "#ff5a5a", "size": 140}],
+     "lines": [{"who": "vo", "text": "คนที่ถูกพักงาน… กลายเป็นเขาเอง"}]},
+
+    {"card": "เก้าโมงเช้า", "mood": "none", "lines": [{"who": "vo", "text": "ย้อนไปเก้าโมงเช้า"}], "sfx": [{"name": "hit", "at": 0}]},
+
+    {"bg": "lobby", "mood": "light", "tag": "นก",
+     "actors": [{"id": "nok", "x": 540, "s": 1.4, "expr": "n", "item": "mop"}],
+     "lines": [{"who": "vo", "text": "เช้านั้นฉันยังใส่ชุดแม่บ้าน… ถูพื้นล็อบบี้เหมือนทุกวัน"},
+               {"who": "vo", "text": "เพราะฉันอยากรู้ว่า วันสุดท้ายในชุดนี้… ใครจะทำอะไรกับฉันบ้าง"}]},
+
+    {"bg": "lobby", "mood": "tense", "tag": "พลอย",
+     "actors": [{"id": "nok", "x": 230, "expr": "n", "item": "mop"}, {"id": "ploy", "x": 760, "expr": "m", "pose": "point"}],
+     "lines": [{"who": "ploy", "text": "อ้าว ยัยแม่บ้าน… ได้ข่าวว่าเจ้าของห้างคนใหม่จะมาวันนี้"},
+               {"who": "ploy", "text": "เตรียมเก็บของได้เลยนะ… คนแรกที่โดนไล่ คือเธอ"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "tense", "tag": "ลุงดำ",
+     "actors": [{"id": "dam", "x": 260, "expr": "s"}, {"id": "krit", "x": 760, "expr": "m", "pose": "point"}],
+     "lines": [{"who": "krit", "text": "เงินในห้างหายไปสองแสน… คนทำความสะอาดคนนี้ เข้าห้องเก็บเงินคนเดียว"},
+               {"who": "dam", "text": "ผมไม่ได้เอาไปนะครับ… ผมทำงานที่นี่ยี่สิบปี ไม่เคยแตะเงินใคร", "expr": {"dam": "c"}},
+               {"who": "krit", "text": "คนจนก็พูดแบบนี้ทุกคนแหละ"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "tense",
+     "actors": [{"id": "dam", "x": 200, "expr": "c"}, {"id": "krit", "x": 520, "expr": "m"}, {"id": "nok", "x": 860, "expr": "a", "item": "mop", "enter": "right"}],
+     "lines": [{"who": "nok", "text": "ลุงดำไม่ได้เอาไปค่ะ"},
+               {"who": "krit", "text": "แม่บ้านเข้ามาทำไม! ออกไปเดี๋ยวนี้!", "expr": {"krit": "a"}}]},
+
+    {"bg": "boardroom", "table": true, "mood": "tense",
+     "actors": [{"id": "dam", "x": 200, "expr": "x"}, {"id": "krit", "x": 520, "expr": "x"}, {"id": "lawyer", "x": 860, "expr": "n", "enter": "right"}],
+     "lines": [{"who": "lawyer", "text": "ขอแนะนำครับ… ประธานกรรมการห้างดาวเหนือคนใหม่"},
+               {"who": "lawyer", "text": "คุณนก… ทายาทคนเดียวของท่านประธานผู้ล่วงลับ"}], "sfx": [{"name": "hit", "line": 1, "off": 1.5}]},
+
+    {"bg": "boardroom", "table": true, "mood": "triumph", "fx": ["flash", "shake"],
+     "actors": [{"id": "krit", "x": 260, "expr": "x"}, {"id": "nok_ceo", "x": 760, "expr": "n"}],
+     "pops": [{"text": "ประธานกรรมการ", "at": 0.5, "y": 360, "size": 110}],
+     "lines": [{"who": "vo", "text": "ฉันถอดผ้ากันเปื้อน… ห้านาที ฉันก็กลับเข้ามาในชุดใหม่"},
+               {"who": "krit", "text": "นก…?! เธอ… เป็นลูกท่านประธาน?!"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "triumph", "cam": "zin",
+     "actors": [{"id": "krit", "x": 260, "expr": "x"}, {"id": "nok_ceo", "x": 760, "expr": "n", "item": "folder"}],
+     "pops": [{"text": "฿200,000", "at": 2.4, "y": 380, "color": "#ff5a5a"}],
+     "lines": [{"who": "nok", "text": "เรื่องเงินสองแสน… กล้องวงจรปิดบันทึกไว้หมดค่ะ"},
+               {"who": "nok", "text": "คนที่เข้าห้องเก็บเงินตอนตีสอง… ไม่ใช่ลุงดำ"}]},
+
+    {"bg": "boardroom", "mood": "tense", "cam": "zin",
+     "actors": [{"id": "krit", "x": 540, "s": 1.6, "expr": "c"}],
+     "lines": [{"who": "nok", "text": "คนในภาพ… ใส่สูทสีกรมท่า ผูกไทสีน้ำเงิน"},
+               {"who": "vo", "text": "เหมือนกับชุดที่สามีของฉัน ใส่อยู่ตอนนี้"}]},
+
+    {"bg": "boardroom", "table": true, "mood": "triumph",
+     "actors": [{"id": "krit", "x": 260, "expr": "c"}, {"id": "nok_ceo", "x": 760, "expr": "n", "pose": "point"}],
+     "pops": [{"text": "พักงาน!", "at": 1.0, "y": 380, "color": "#ff5a5a", "size": 140}],
+     "lines": [{"who": "nok", "text": "คุณกฤษ… พักงานระหว่างสอบสวนค่ะ"},
+               {"who": "nok", "text": "ส่วนลุงดำ… ขอโทษแทนห้างนี้ด้วยนะคะ"}]},
+
+    {"bg": "boardroom", "mood": "sad", "fx": ["sparkle"],
+     "actors": [{"id": "dam", "x": 300, "expr": "c"}, {"id": "nok_ceo", "x": 760, "expr": "h"}],
+     "lines": [{"who": "dam", "text": "นก… ลุงไม่รู้เลยว่าหนูเป็นใคร"},
+               {"who": "nok", "text": "หนูเป็นนกคนเดิมค่ะลุง… คนที่ลุงแบ่งไข่เจียวให้กินทุกวัน"}]},
+
+    {"bg": "home", "mood": "tense", "tag": "แม่มาลี",
+     "actors": [{"id": "mali", "x": 300, "expr": "x", "pose": "phone"}],
+     "lines": [{"who": "vo", "text": "เย็นวันนั้น ข่าวไปถึงบ้านแม่สามี เร็วกว่าที่คิด"},
+               {"who": "mali", "text": "อะไรนะ! ยัยนก… เป็นเจ้าของห้าง?!"}]},
+
+    {"bg": "home", "mood": "tense", "cam": "zin", "vignette": true,
+     "actors": [{"id": "krit", "x": 540, "s": 1.9, "expr": "m"}],
+     "lines": [{"who": "krit", "text": "ไม่เป็นไรแม่… เดี๋ยวผมง้อเมียกลับมาเอง"}], "minDur": 4.0}
+  ]
+}

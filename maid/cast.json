@@ -1,0 +1,10 @@
+{
+ "nok":     {"name":"นก","skin":"#f3cfae","hair":"#2a2320","hairStyle":"bun","shirt":"#8ecae6","pants":"#5a6f8a","apron":"#ffffff","sub":"#ffffff","voice":"XrExE9yKIg1WjnnlVkGX"},
+ "nok_ceo": {"name":"นก","skin":"#f3cfae","hair":"#2a2320","hairStyle":"long","hairBack":true,"shirt":"#fdfdfd","pants":"#fdfdfd","dress":true,"watch":true,"sub":"#ffffff","voice":"XrExE9yKIg1WjnnlVkGX"},
+ "krit":    {"name":"กฤษ","skin":"#f0c49c","hair":"#151515","hairStyle":"slick","shirt":"#ffffff","pants":"#2e3a52","tie":"#3d5a99","watch":true,"sub":"#8fd0ff","voice":"ErXwobaYiN019PkySvjV"},
+ "ploy":    {"name":"พลอย","skin":"#f7d2b6","hair":"#8a4b2b","hairStyle":"long","hairBack":true,"shirt":"#d62839","pants":"#d62839","dress":true,"sunglasses":false,"sub":"#ff9fc6","voice":"Xb7hH8MSUJpSbSDYk0k2"},
+ "mali":    {"name":"แม่มาลี","skin":"#e8b98f","hair":"#9a9a9a","hairStyle":"bun","shirt":"#6a4c93","pants":"#6a4c93","dress":true,"watch":true,"sub":"#d8b4ff","voice":"pFZP5JQG7iQjIQuC4Bku"},
+ "dam":     {"name":"ลุงดำ","skin":"#a8744f","hair":"#cfcfcf","hairStyle":"gray","shirt":"#8ecae6","pants":"#5a6f8a","apron":"#ffffff","sub":"#b8f5c8","voice":"pNInz6obpgDQGcFmaJgB"},
+ "lawyer":  {"name":"ทนายประเสริฐ","skin":"#e8b98f","hair":"#5a5a5a","hairStyle":"short","shirt":"#2b2b2b","pants":"#2b2b2b","tie":"#8b0000","sub":"#ffe08a","voice":"VR6AewLTigWG4xSOukaG"},
+ "vo":      {"name":"","sub":"#ffffff","voice":"XrExE9yKIg1WjnnlVkGX"}
+}

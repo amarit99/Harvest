@@ -78,7 +78,7 @@ for sc in ep["scenes"]:
     moods.append((sc.get("mood", "none"), t0, D))
     scenes.append(s2); t0 += D
 TOTAL = round(t0, 3)
-tl = {"total": TOTAL, "next": ep.get("next"), "scenes": scenes}
+tl = {"total": TOTAL, "next": ep.get("next"), "sign": ep.get("sign"), "signColor": ep.get("signColor"), "scenes": scenes}
 json.dump(tl, open(f"{WORK}/timeline.json", "w"), ensure_ascii=False)
 print("total", TOTAL)
 if os.environ.get("TIMELINE_ONLY"): sys.exit(0)
